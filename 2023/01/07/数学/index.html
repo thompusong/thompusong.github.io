@@ -6,15 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives: 2023 | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="秩r(AB)≤r(A)&#x2F;r(B)≤r(A,B)≤r(A)+r(B) r(A±B)≤r(A)+r(B) 秩越乘越小，越拼越大，分开加最大 真题2022202121求二重积分要确定积分区域（特别是化极坐标），给定的 x y 区域限制不一定就是极坐标积分区域 对于没有显示给出积分区域的图形，要从 $\rho$ 和 $\theta$ 的关系得出 有 $\rho&#x3D;\sqrt{\cos{2\theta}}$">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/2023/index.html">
+<meta property="og:url" content="http://example.com/2023/01/07/%E6%95%B0%E5%AD%A6/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="秩r(AB)≤r(A)&#x2F;r(B)≤r(A,B)≤r(A)+r(B) r(A±B)≤r(A)+r(B) 秩越乘越小，越拼越大，分开加最大 真题2022202121求二重积分要确定积分区域（特别是化极坐标），给定的 x y 区域限制不一定就是极坐标积分区域 对于没有显示给出积分区域的图形，要从 $\rho$ 和 $\theta$ 的关系得出 有 $\rho&#x3D;\sqrt{\cos{2\theta}}$">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="d:/thompusong/笔记/考研笔记/数学图/22-12.jpg">
+<meta property="article:published_time" content="2023-01-07T08:59:07.831Z">
+<meta property="article:modified_time" content="2022-12-14T08:25:42.989Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="d:/thompusong/笔记/考研笔记/数学图/22-12.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,85 +156,324 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-数学" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="秩"><a href="#秩" class="headerlink" title="秩"></a>秩</h1><p>r(AB)≤r(A)/r(B)≤r(A,B)≤r(A)+r(B)</p>
+<p>r(A±B)≤r(A)+r(B)</p>
+<p>秩越乘越小，越拼越大，分开加最大</p>
+<h1 id="真题"><a href="#真题" class="headerlink" title="真题"></a>真题</h1><h2 id="2022"><a href="#2022" class="headerlink" title="2022"></a>2022</h2><h2 id="2021"><a href="#2021" class="headerlink" title="2021"></a>2021</h2><h3 id="21"><a href="#21" class="headerlink" title="21"></a>21</h3><p>求二重积分要确定积分区域（特别是化极坐标），给定的 x y 区域限制不一定就是极坐标积分区域</p>
+<p><strong>对于没有显示给出积分区域的图形，要从 $\rho$ 和 $\theta$ 的关系得出</strong></p>
+<p>有 $\rho=\sqrt{\cos{2\theta}}$ ，</p>
+<p>则 $\rho$ 范围由 $0\sim\sqrt{\cos{2\theta}}$ ，当 $\theta\rightarrow\frac{\pi}{4}$ 时，$\rho\rightarrow0$ ,则 $\theta$ 的范围为 $0\sim\frac{\pi}{4}$ （根号内为非负）</p>
+<h2 id="2020"><a href="#2020" class="headerlink" title="2020"></a>2020</h2><h3 id="12"><a href="#12" class="headerlink" title="12"></a>12</h3><p><img src="D:\thompusong\笔记\考研笔记\数学图\22-12.jpg" alt="22-12"></p>
+<p>斜边长为$2a$的等腰直角三角形平板铅直地浸没在水中，且斜边与水面相齐，记重力加速度为g，水密度为ρ，则三角形平板的一侧收到的压力为？</p>
+<p>$dF=ρgy<em>b</em>dy=ρgy<em>2(a-y)dy$ （其中，y为高，b为微元深度对应的直角三角形平板长度，$b</em>dy$为微元深度对应的直角三角形平板面积，根据几何性质得出b=2(a-y) ）</p>
+<p>$\int dF=\int_{0}^{a}dF=\int_{0}^{a}ρgy * 2(a-y) dy = 2ρg\int_{0}^{a}(ay- y^2 ) dy=\frac{1}{3} ρga^3$  </p>
+<h3 id="22"><a href="#22" class="headerlink" title="22"></a>22</h3><p>向量组等价，矩阵等价$\Rightarrow$<strong>矩阵的秩=增广矩阵的秩</strong></p>
+<p>求B向量组的某一向量用A向量组表示，只用A向量组与<strong>该向量拼起来化行最简</strong>（不用拼全部）</p>
+<h2 id="2019"><a href="#2019" class="headerlink" title="2019"></a>2019</h2><h3 id="15"><a href="#15" class="headerlink" title="15"></a>15</h3><p>求极值时，若有导数不存在的点，也要判断左右增减性，改点可能也有极值</p>
+<h2 id="2018"><a href="#2018" class="headerlink" title="2018"></a>2018</h2><h3 id="15-1"><a href="#15-1" class="headerlink" title="15"></a>15</h3><p>求积分时，分部积分，要注意交换后的 du$\rightarrow$dx 的变化</p>
+<p>参考2018-15</p>
+<p>$d\ arctan\sqrt{e^x-1}=\frac{1}{1+e^x-1}*\frac{e^x}{2\sqrt{e^x-1}}\ dx=\frac{1}{2\sqrt{e^x-1}}\ dx$</p>
+<h3 id="17"><a href="#17" class="headerlink" title="17"></a>17</h3><p>参数方程求二重积分时，可以直接带入x y，最后将x y变成t的函数，注意dx$\rightarrow$dt的替换</p>
+<h3 id="18"><a href="#18" class="headerlink" title="18"></a>18</h3><p>证明函数值范围（如&gt;=0）时，可以留下易判别的简单部分[如(x-1)]，先求复杂部分的单调性</p>
+<h3 id="20"><a href="#20" class="headerlink" title="20"></a>20</h3><p>沿x轴正向速度即$\frac{dx}{dt}$，求图形面积可以用图像法简单易算的方法求</p>
+<p>（面积=梯形-图形下方面积）</p>
+<h3 id="21-1"><a href="#21-1" class="headerlink" title="21"></a>21</h3><p>利用$e^x-1&gt;x$来验证有界性</p>
+<p>利用拉格朗日中值定理来验证单调性</p>
+<h3 id="22-1"><a href="#22-1" class="headerlink" title="22"></a>22</h3><p>1.二次型f($x_1,x_2,x_3$)=0的解，即将二次型化为矩阵，然后求解</p>
+<p>①秩&lt;n，只有零解</p>
+<p>②秩=n，求基础解系</p>
+<p>2.满秩规范形可直接为$y_1^2+y_2^2+y^2_3$</p>
+<p>不满秩要替换/配方法</p>
+<h3 id="23"><a href="#23" class="headerlink" title="23"></a>23</h3><p>AP=B 即求 Ax=B 的解</p>
+<h2 id="2017"><a href="#2017" class="headerlink" title="2017"></a>2017</h2><h3 id="8"><a href="#8" class="headerlink" title="8"></a>8</h3><p>可相似对角化<strong>充要条件</strong>：</p>
+<p>$\Leftrightarrow$A恰有n个线性无关的特征向量</p>
+<p>$\Leftrightarrow$对于A的每个k重特征值λ，都有k个无关特征向量</p>
+<p>$\Leftrightarrow$对于A的每个k重特征值λ，n-r(λE-A)=k</p>
+<p>可相似对角化的<strong>充分条件</strong>：</p>
+<p>$\Rightarrow$n阶矩阵A有n个不同的特征值$\Rightarrow$A$\sim\Lambda$</p>
+<p>$\Rightarrow$n阶矩阵A是实对称矩阵$\Rightarrow$A$\sim\Lambda$</p>
+<h3 id="19"><a href="#19" class="headerlink" title="19"></a>19</h3><p>（2）<strong>三点两次罗尔定理</strong></p>
+<p>已知函数$f(x)f^{‘’}(x)+[f^{‘}(x)]^2=0$可以转化为</p>
+<p>设$F(x)=f(x)f^{‘}(x)$，则$F^{‘}(x)=f(x)f^{‘’}(x)+[f^{‘}(x)]^2$</p>
+<p>那么，题目就转化为求F(x)的两个极值点，即$F^{‘}(x)=0$的点</p>
+<p>那么，若F(x)在区间内，有三个零点，连续$\Rightarrow$必有两个极值点</p>
+<p>其中，有$f(0)=0$，第一问得出在区间内有一点f(ξ)=0</p>
+<p>那么$F(0)=f(0)f^{‘}(0)=0$，$F(ξ)=f(ξ)f^{‘}(ξ)=0$</p>
+<p>由f(0)=f(ξ)=0，存在$η\in(0,ξ)，使f^{‘}(ξ)=0\Rightarrow F(η)=f(η)f^{‘}(η)=0$</p>
+<p>则：存在$η_1\in(0,η)，使F^{‘}(η_1)=0;η2\in(η,ξ),使F^{‘}(η_2)=0$</p>
+<p>即$η_1、η_2$是方程$f(x)f^{‘’}(x)+[f^{‘}(x)]^2=0$的两个不同的实根</p>
+<h3 id="21-2"><a href="#21-2" class="headerlink" title="21"></a>21</h3><p>微分方程，遇到类似$y-xy^{‘}=yy^{‘}+x\Rightarrow y^{‘}=\frac{y-x}{y+x}\Rightarrow y^{‘}=\frac{\frac{y}{x}-1}{\frac{y}{x}+1}$</p>
+<p>可令$\frac{y}{x}=u\Rightarrow y=xu$，则$y^{‘}=u+u\frac{du}{dx}$</p>
+<h2 id="2016"><a href="#2016" class="headerlink" title="2016"></a>2016</h2><h3 id="16"><a href="#16" class="headerlink" title="16"></a>16</h3><p>时刻牢记x的定义域为(0,+∞)</p>
+<p>要在(0,1)和(1,+∞)区间内分类讨论求出f(x)</p>
+<p>对f(x)求导时，也要注意分段点的导数存在情况（定义法）</p>
+<h3 id="17-1"><a href="#17-1" class="headerlink" title="17"></a>17</h3><p>求二阶隐函数极值，若同时存在x，y，z</p>
+<p>按照求极值方法，求$\frac{dz}{dx}=0,\frac{dz}{dy}=0$，求出驻点x，y，z的值，</p>
+<p>再求A、B、C确认极大极小值，最后带入</p>
+<h3 id="19-1"><a href="#19-1" class="headerlink" title="19"></a>19</h3><p>对于微分方程$(2x-1)u^{‘’}(x)+(2x-3)u^{‘}(x)=0$，化成$\frac{u^{‘’}(x)}{u^{‘}(x)}=-\frac{2x-3}{2x-1}=-1+\frac{2}{2x-1}$，</p>
+<p>则$lnu{‘}(x)=-x+ln(2x-1)+lnC_1$</p>
+<p>则$u^{‘}(x)=C_1(2x-1)e^{-x}$</p>
+<p>则$u(x)=-C_1(2x+1)e^{-x}+C_2$</p>
+<p>（$\int\frac{y^{‘’}}{y^{‘}}=lny^{‘}+C$）</p>
+<p>$y_1(x)=e^x，y_2(x)=u(x)e^x=-(2x+1)$是二阶微分方程的两个线性无关的解</p>
+<p>所以通解为：$y(x)=C_1y_1(x)+C_2y_2(x)=C_1e^x+C_2(2x+1)$</p>
+<p>（二阶微分方程通解为两个线性无关的解方程的解向量组）</p>
+<h3 id="20-1"><a href="#20-1" class="headerlink" title="20"></a>20</h3><p>$ds=\sqrt{1+(y^{‘})^2}dx=\sqrt{(x^{‘}(t))^2+y^{‘}(t))^2}dt$，化为参数方程后面直接为<strong>dt</strong></p>
+<p>旋转体侧面积：此题要求两块（上下曲线）</p>
+<h3 id="21-3"><a href="#21-3" class="headerlink" title="21"></a>21</h3><p>①牛顿莱布尼兹公式$\int^b_af(x)dx=F(b)-F(a)$</p>
+<p>此题中平均值为$\frac{2}{3\pi}*\int^{\frac{3\pi}{2}}_0f(x)dx$</p>
+<p>由牛顿莱布尼茨公式，则有$f(x)=\int^x_0\frac{cost}{2t-3\pi}dt+f(0)=\int^x_0\frac{cost}{2t-3\pi}dt，其中f(0)=0$</p>
+<p>则平均值为二重积分$\int^{\frac{3\pi}{2}}_0(\int^x_0\frac{cost}{2t-3\pi}dt)dx$</p>
+<h3 id="23-1"><a href="#23-1" class="headerlink" title="23"></a>23</h3><p>①求矩阵的大数次方</p>
+<p>如果此矩阵不好分块、计算2、3次方无规律，</p>
+<p>则可用相似对角化，求$P^{-1}AP=\Lambda，则矩阵A=P\Lambda P^{-1}$</p>
+<p>则$A^n=P(\Lambda^n)P^{-1}$</p>
+<p>②$由B^2=BA，有B^3=BBA=B^2A=BAA=BA^2，归纳得B^{100}=BA^{99}$</p>
+<p>则$(\beta_1,\beta_2,\beta_3)=(\alpha_1,\alpha_2,\alpha_3)BA^{99}$</p>
+<p>化成矩阵形式即可得解</p>
+<h2 id="2015"><a href="#2015" class="headerlink" title="2015"></a>2015</h2><h3 id="2"><a href="#2" class="headerlink" title="2"></a>2</h3><p>求出f(x)表达式=$e^x$，其中x=0为断点，而左右极限相等，所以存在可去间断点</p>
+<h3 id="3"><a href="#3" class="headerlink" title="3"></a>3</h3><p>此题只需求$\lim_{x\rightarrow0^+}f^{‘}(x)=\lim_{x\rightarrow0^-}f^{‘}(x)=0$即可</p>
+<h3 id="4"><a href="#4" class="headerlink" title="4"></a>4</h3><p>拐点只可能存在于：$f^{‘’}(x)=0或f^{‘’}(x)不存在的点$</p>
+<p>存在条件为：左右符号相反</p>
+<h3 id="5"><a href="#5" class="headerlink" title="5"></a>5</h3><p>法一：（链式法则）</p>
+<p>$f^{‘}(x)=f^{‘}_1+f^{‘}_2*(-\frac{y}{x^2})=2x$</p>
+<p>$f^{‘}(y)=f^{‘}_1+f^{‘}_2*(\frac{1}{x})=-2y$</p>
+<p>$由<br>    \begin{cases}<br>        u=x+y\<br>        v=\frac{y}x<br>    \end{cases} \Rightarrow \begin{cases}<br>        x=\frac u{1+v}=\frac{1}2 \<br>        y=\frac {uv}{1+v}=\frac{1}2<br>    \end{cases}$</p>
+<p>代入方程，得$\begin{cases}<br>        f^{‘}_1+f^{‘}_2*(-2)=1 \<br>        f^{‘}_1+f^{‘}_2*2=-1<br>    \end{cases}$</p>
+<p>解得$\begin{cases}<br>        f^{‘}_1=0 \<br>        f^{‘}_1=-\frac{1}2<br>    \end{cases}$</p>
+<p>法二：（将x、y化为u、v）</p>
+<p>$由<br>    \begin{cases}<br>        u=x+y\<br>        v=\frac{y}x<br>    \end{cases} \Rightarrow \begin{cases}<br>        x=\frac u{1+v}=\frac{1}2 \<br>        y=\frac {uv}{1+v}=\frac{1}2<br>    \end{cases}$</p>
+<p>得$f(u,v)=\frac{u^2-u^2v^2}{(1+v)^2}$</p>
+<p>直接求偏导即可求解</p>
+<h3 id="8-1"><a href="#8-1" class="headerlink" title="8"></a>8</h3><p> 要注意特征值和特征向量的对应</p>
+<h3 id="20-2"><a href="#20-2" class="headerlink" title="20"></a>20</h3><p>$\frac{dT}{dt}=k(T(t)-20)$</p>
+<p>则$\int\frac{dT}{T-20}=k\int dt$</p>
+<p>则$T(t)=Ce^{kt}+20$</p>
+<h3 id="21-4"><a href="#21-4" class="headerlink" title="21"></a>21</h3><p>由切线方程可得：$x_0=b-\frac{f(b)}{f^{‘}(b)}$</p>
+<p>①证$b-\frac{f(b)}{f^{‘}(b)}&lt;b$</p>
+<p>$f(b)&gt;0,f^{‘}(b)&gt;0，则\frac{f(b)}{f^{‘}(b)}&gt;0$</p>
+<p>则$b-\frac{f(b)}{f^{‘}(b)}&lt;b$</p>
+<p>②证$b-\frac{f(b)}{f^{‘}(b)}&gt;a$</p>
+<p>令$g(x)=x-\frac{f(x)}{f^{‘}(x)}-a$</p>
+<p>则$g^{‘}(x)=1-\frac{(f^{‘}(x))^2-f^{‘’}(x)f(x)}{(f^{‘}(x))^2}=\frac{f^{‘’}(x)f(x)}{(f^{‘}(x))^2}&gt;0\Rightarrow g(b)&gt;g(a)\Rightarrow b-a-\frac{f(b)}{f^{‘}(b)}&gt;0\Rightarrow b-\frac{f(b)}{f^{‘}(b)}&gt;a$</p>
+<h2 id="2014"><a href="#2014" class="headerlink" title="2014"></a>2014</h2><h3 id="4-1"><a href="#4-1" class="headerlink" title="4"></a>4</h3><p>$$<br>曲率半径=\frac1{曲率}<br>$$</p>
+<h3 id="12-1"><a href="#12-1" class="headerlink" title="12"></a>12</h3><p>$x=rcos\theta=\theta cos\theta$</p>
+<p>$y=rsin\theta=\theta sin\theta$</p>
+<p>则斜率$=\frac{dy/d\theta}{dx/d\theta}，其中\theta=\frac\pi{2}，得\frac{dy}{dx}=-\frac2{\pi}$</p>
+<p>而$(x,y)|_{\theta=\frac\pi{2}}=(0,\frac\pi{2})$</p>
+<p>切线方程为:$y-\frac{\pi}2=-\frac2{\pi}(x-0)$</p>
+<p>$\Rightarrow y=-\frac2{\pi}x+\frac\pi{2}$</p>
+<h3 id="13"><a href="#13" class="headerlink" title="13"></a>13</h3><p>质心公式<br>$$<br>\overline{x}=\frac{\int^b_axydx}{\int^b_aydx}\<br>\overline{y}=\frac{\frac1{2}\int^b_ay^2dx}{\int^b_aydx}<br>$$</p>
+<h3 id="18-1"><a href="#18-1" class="headerlink" title="18"></a>18</h3><p>$f(e^xcosy)，是一元的，不用分f’_1,f’_2，直接用f’和f’’$</p>
+<h3 id="21-5"><a href="#21-5" class="headerlink" title="21"></a>21</h3><p>求到$(y+1)^2=(2-x)lnx，因为(y+1)^2\ge0，定x范围为(1\le x\le2)$</p>
+<p>画出图形，直接二重积分</p>
+<h2 id="2013"><a href="#2013" class="headerlink" title="2013"></a>2013</h2><h3 id="3-1"><a href="#3-1" class="headerlink" title="3"></a>3</h3><p>注意求F(x)要对x范围讨论</p>
+<h3 id="18-2"><a href="#18-2" class="headerlink" title="18"></a>18</h3><p>（2）$f(x)是奇函数，所以f’(x)是偶函数，有f’(\xi)=f’(-\xi)=1$</p>
+<p>$令F(x)=[f’(x)-1]e^x，则F(x)可导，且F(-\xi)=F(\xi)=0$</p>
+<p>$所以\exist\ \eta\in(-\xi,\xi)\subset(-1,1)，使得F’(\eta)=0$</p>
+<p>$由F’(\eta)=[f’’(\eta)+f’(\eta)-1]e^\eta=0，得f’’(\eta)+f’(\eta)-1=0$</p>
+<p>$即：f’’(\eta)+f’(\eta)=1$</p>
+<h3 id="19-2"><a href="#19-2" class="headerlink" title="19"></a>19</h3><p>此题类型为：隐函数求条件极值</p>
+<p>在曲线上任取一点$p(x,y)$，其到原点距离为$d=\sqrt{x^2+y^2}$</p>
+<p>构造拉格朗日函数$L=x^2+y^2+\lambda(x^3-xy+y^3-1)$<br>$$<br>则有：<br>    \begin{cases}<br>        \frac{\part L}{\part x}=2x+\lambda(3x^2-y)=0\<br>        \frac{\part L}{\part y}=2y+\lambda(-x+3y^2)=0\<br>        \frac{\part L}{\part \lambda}=x^3-xy+y^3-1=0\<br>    \end{cases}\</p>
+<p>解得：<br>    x=y\ <br>    或\ <br>    x+y=-\frac{2+\lambda}{3\lambda}\</p>
+<p>①当x=y时：\<br>    \begin{cases}<br>        x=1\<br>        y=1\<br>    \end{cases}\<br>此时d=\sqrt2\</p>
+<p>②当x+y=-\frac{2+\lambda}{3\lambda}时：<br>可得：x^2+y^2=-\frac{\lambda^2-4}{9\lambda^2}\<br>进一步有：xy=\frac{\lambda^2+2\lambda}{9\lambda^2}\<br>而x^3-xy+y^3=1可变换为(x+y)(x^2+y^2-xy)-xy=1\<br>解得：\lambda=-\sqrt[3]{\frac2{7}}，但此时xy=\frac{\lambda+2}{9\lambda}&lt;0，不满足x\ge0,y\ge0\<br>所以在x\ge0,y\ge0内只有一个驻点(1,1)\<br>再考虑边界上的情况，d|<em>{(0,1)}=1,d|</em>{(1,0)}=1\<br>综上所述，可知最远距离d_{max}=\sqrt2，最近距离d_{min}=1<br>$$</p>
+<h3 id="23-2"><a href="#23-2" class="headerlink" title="23"></a>23</h3><p>（2）求标准型，又给出正交，有正交乘积为0，可用求特征值的方法切入</p>
+<p>求特征值可通过$A\alpha=k\alpha\Rightarrow\lambda=k$求得<br>$$<br>因\alpha、\beta均是单位向量且相互正交，有：\<br>A\alpha=(2\alpha\alpha^T+\beta\beta^T)\alpha=2\alpha(\alpha^T\alpha)+\beta(\beta^T\alpha)=2\alpha\<br>A\beta=(2\alpha\alpha^T+\beta\beta^T)\beta=2\alpha(\alpha^T\beta)+\beta(\beta^T\beta)=\beta\<br>则\lambda_1=2,\lambda_2=1是A的特征值\<br>\<br>又因为\alpha\alpha^T,\beta\beta^T都是秩为1的矩阵，所以：\<br>r(A)=r(2\alpha\alpha^T+\beta\beta^T)\le r(\alpha\alpha^T)+r(\beta\beta^T)=2&lt;3\<br>故\lambda_3=0是A的特征值\<br>\<br>因此经正交变换二次型f的标准型为2y_1^2+y_2^2<br>$$</p>
+<h2 id="2012"><a href="#2012" class="headerlink" title="2012"></a>2012</h2><h3 id="14"><a href="#14" class="headerlink" title="14"></a>14</h3><p>行列式交换两行，值为相反数</p>
+<p>$|B|=-|A|$</p>
+<h3 id="19-3"><a href="#19-3" class="headerlink" title="19"></a>19</h3><p>当传统做法求不出y’=0时的坐标时，可以利用y’’看正负求拐点<br>$$<br>y=f(x^2)\int_0^xf(-t^2)dt=e^{x^2}\int_0^xe^{-t^2}dt\<br>y’=2xe^{x^2}\int_0^xe^{-t^2}dt+1\<br>y’’=2x+2(1+2x^2)e^{x^2}\int_0^xe^{-t^2}dt\<br>当x&lt;0时，y’’&lt;0；当x&gt;0时，y’’&gt;0，又y(0)=0，所以曲线的拐点为(0,0)<br>$$</p>
+<h3 id="20-3"><a href="#20-3" class="headerlink" title="20"></a>20</h3><p>求两次导反推<br>$$<br>记f(x)=xln\frac{1+x}{1-x}+cosx-\frac{-x^2}2-1\<br>则f’(x)=ln\frac{1+x}{1-x}+\frac{2x}{1-x^2}-sinx-x\<br>f’’(x)=\frac4{(1-x^2)^2}-1-cosx\<br>当-1&lt;x&lt;1时，由于\frac4{(1-x^2)^2}\ge4,\ 1+cosx\le2\<br>所以f’’(x)\ge2&gt;0，从而f’(x)单调增加\<br>由因为f’(0)=0，所以当x\in(-1,0)时，f’(x)&lt;0；当x\in(0,1)时，f’(x)&gt;0\<br>所以在(-1,1)内有最小值f(0)=0\<br>从而xln\frac{1+x}{1-x}+cosx\ge1+\frac{x^2}2\<br>$$</p>
+<h3 id="21-6"><a href="#21-6" class="headerlink" title="21"></a>21</h3><p>（2）<br>$$<br>由x_n\in(\frac1{2},1)知数列{x_n}有界，又\<br>x_n^n+x_n^{n-1}+…+x_n=1\<br>x_{n+1}^{n+1}+x^n_{n+1}+x_{n+1}^{n-1}…+x_{n+1}=1\<br>因为x_{n+1}^{n+1}&gt;0，所以x_n^n+x_n^{n-1}+…+x_n&gt;x_{n+1}^{n+1}+x^n_{n+1}+x_{n+1}^{n-1}…+x_{n+1}\<br>于是有x_n&gt;x_{n+1}，n=1,2,…,即{x_n}单调减少\<br>综上所述，数列{x_n}单调有界，故{x_n}收敛，记a=lim_{n\rightarrow\infty}x_n，由于\frac{x_n-x_n^{n+1}}{1-x_n}=\frac{x_n(1-x_n^n)}{1-x_n}=1\<br>令n\rightarrow\infty并注意到\frac1{2}&lt;x_n&lt;x_1&lt;1，则x_n^n\rightarrow0\<br>则有\frac a{1-a}=1，解得a=\frac1{2}\<br>即lim_{n\rightarrow\infty}x_n=\frac{1}2<br>$$</p>
+<h2 id="2011"><a href="#2011" class="headerlink" title="2011"></a>2011</h2><h3 id="8-2"><a href="#8-2" class="headerlink" title="8"></a>8</h3><p><strong>基础解系线性无关，基础解系个数$\Rightarrow$n-r(A)</strong><br>$$<br>基础解系:\begin{cases}<br>    ①是解\<br>    ②无关\<br>    ③n-r(A)个\<br>\end{cases}\<br>\<br>①A^<em>A=|A|E=0，其中，由Ax=0有非零解\Rightarrow|A|=0\<br>则A的列向量都是A^</em>x=0的解\<br>②由A(1,0,1,0)^T=(\alpha_1,\alpha_2,\alpha_3,\alpha_4)(1,0,1,0)^T=\alpha_1+\alpha_3=0\<br>则\alpha_1,\alpha_3线性相关\<br>③r(A^*)=\begin{cases}<br>    n,r(A)=n\<br>    1,r(A)=n-1\<br>    0,r(A)&lt;n-1<br>\end{cases}\<br>由n-r(A)=4-r(A)=1\<br>得r(A)=3\<br>∴r(A^*)=1\<br>∴4-r(A^*)=3<br>$$</p>
+<h3 id="18-3"><a href="#18-3" class="headerlink" title="18"></a>18</h3><p>由题意有：</p>
+<p><strong>①$\frac{d\alpha}{dx}=\frac{dy}{dx}\Rightarrow\alpha(x)=y(x)+c$</strong> </p>
+<p><strong>②$\alpha是曲线l在点(x,y)处切线的倾角\Rightarrow\frac{d\alpha}{dx}=\frac{dy}{dx}=tan\alpha$</strong> </p>
+<p>③$由y=y(x)与y=x相切于原点\Rightarrow y(0)=0,y’(0)=1$ </p>
+<p>则有：<br>$$<br>法一：\<br>由\frac{d\alpha}{dx}=tan\alpha\Rightarrow\int cot\alpha d\alpha=\int dx\Rightarrow sin\alpha=C_1e^x\<br>有y’(0)=1即\alpha(0)=\frac{\pi}4\Rightarrow C_1=\frac1{\sqrt2}\Rightarrow\alpha=arcsin\frac{e^x}{\sqrt2}\<br>则y(x)=\alpha(x)+C_2=arcsin\frac{e^x}{\sqrt2}+C_2\<br>有y(0)=0\Rightarrow y(x)=arcsin\frac{e^x}{\sqrt2}-\frac{\pi}4\<br>\<br>法二：\<br>\frac{dy}{dx}=tan\alpha\Rightarrow\alpha=arctany’\<br>则\frac{d\alpha}{dx}=\frac{darctany’}{dx}=\frac{y’’}{1+(y’)^2}=\frac{dy}{dx}=y’\<br>令p=y’,y’’=p’,则有\frac{p’}{1+p^2}=p\<br>解得p^2=\frac1{C_1e^{-2x}-1}\<br>由p(0)=y’(0)=1\Rightarrow C_1=2\Rightarrow y’=\frac1{\sqrt{2e^{-2x}-1}}\<br>\Rightarrow y(x)=\int_0^x\frac1{\sqrt{2e^{-2t}-1}}dt+y(0)（牛顿莱布尼兹公式）\<br>\Rightarrow y(x)=arcsin\frac{e^x}{\sqrt2}-\frac{\pi}4<br>$$</p>
+<h3 id="20-4"><a href="#20-4" class="headerlink" title="20"></a>20</h3><p>(1)</p>
+<p><strong>曲线关于$y=\frac1{2}$对称，且关于y轴对称，所以只需求一块，而右下角块为单位圆，计算最为简单，所以选取右下角块做旋转</strong><br>$$<br>V_{右下绕x轴旋转}=2\pi\int_{-1}^{\frac1{2}}dx\int_0^{\sqrt{1-y^2}}xdx=\frac{9\pi}8\<br>则V=2V_{右下绕x轴旋转}=\frac{9\pi}4<br>$$<br>(2)<br>$$<br>W=mgh=\rho Vgh（其中\rho、g为常数，V、h为微元变量）\<br>W=\int_{-1}^{\frac1{2}}\rho g\cdot(2-y)\cdot\pi(1-y^2)dy<br>+\int_{\frac1{2}}^2\rho g\cdot(2-y)\cdot\pi(2y-y^2)dy<br>=\frac{27}8\pi\rho g<br>$$</p>
+<h3 id="21-7"><a href="#21-7" class="headerlink" title="21"></a>21</h3><p><strong>还原+换序</strong><br>$$<br>I=\int_0^1xdx\int_0^1yf_{xy}’’(x,y)dy\<br>=\int_0^1xdx\int_0^1ydf_x’(x,y)\<br>=\int_0^1x[yf_x’(x,y)|<em>{y=0}^{y=1}-\int_0^1f_x’(x,y)dy]dx\<br>=\int_0^1x[f_x’(x,1)-\int_0^1f_x’(x,y)dy]dx\<br>(由f(x,1)=0\Rightarrow f’(x,1)=0)\<br>=-\int_0^1xdx\int_0^1f_x’(x,y)dy\<br>(f_x’(x,y)是f(x,y)对x求偏导而来，所以交换积分次序)\<br>=-\int_0^1dy\int_0^1xf_x’(x,y)dx\<br>=-\int_0^1dy\int_0^1xdf_x(x,y)\<br>=-\int_0^1[xf(x,y)|</em>{x=0}^{x=1}-\int_0^1f(x,y)dx]dy\<br>==-\int_0^1[f(1,y)-\int_0^1f(x,y)dx]dy\<br>(f(1,y)=0)\<br>=\int_0^1\int_0^1f(x,y)dxdy=a<br>$$</p>
+<h2 id="2011-1"><a href="#2011-1" class="headerlink" title="2011"></a>2011</h2><h3 id="4-2"><a href="#4-2" class="headerlink" title="4"></a>4</h3><p>$$<br>当<br>lim_{x\rightarrow0^+}时,\frac{ln^{\frac2{m}}(1-x)}{\sqrt[n]{x}}=\frac1{x^{\frac1{n}-\frac2{m}}}\<br>其中,\frac1{n}最大为1，减去一个正数\frac2{m}总是&lt;1，则无论n,m取何值，都收敛\<br>\\<br>当lim_{x\rightarrow1^-}时,\frac{ln^{\frac2{m}}(1-x)}{\sqrt[n]{x}}=ln^{\frac2{m}}(1-x)=\infty\<br>(有t\rightarrow0^+时\frac1{x^p}，两者对比)\<br>①当p&gt;1时：lim_{t\rightarrow0^+}\frac{ln^{\frac2m}t}{\frac1{t^p}}(取p=2)=lim_{t\rightarrow0^+}t^2ln^{\frac2m}t=0，无法判断\<br>②当p&lt;1时：lim_{t\rightarrow0^+}\frac{ln^{\frac2m}t}{\frac1{t^p}}(取p=\frac12)=lim_{t\rightarrow0^+}t^{\frac12}ln^{\frac2m}t=0，大收敛小必收敛<br>$$</p>
+<h3 id="18-4"><a href="#18-4" class="headerlink" title="18"></a>18</h3><p><strong>油桶平放，图为底面</strong><br>$$<br>椭圆：\frac{x^2}{a^2}+\frac{y^2}{b^2}=1\<br>椭圆面积：S=\pi ab\<br>记S_1为x轴下部分面积，S_2为x轴上部分面积，则S_1=\frac12\pi ab\<br>S_2=\int_0^{\frac b2}\int_{-a\sqrt{1-\frac{y^2}{b^2}}}^{a\sqrt{1-\frac{y^2}{b^2}}}dx=2\int_0^{\frac b2}a\sqrt{1-\frac{y^2}{b^2}}dy\<br>解积分得：S_2=ab(\frac\pi6+\frac{\sqrt3}4)\<br>则油的指令为\rho V=\rho(S_1+S_2)l=(\frac23\pi+\frac{\sqrt3}4)abl\rho<br>$$</p>
+<h3 id="21-8"><a href="#21-8" class="headerlink" title="21"></a>21</h3><p>分开区域，双中值$\Rightarrow$两边用中值定理$\Rightarrow$构造函数<br>$$<br>令F(x)=f(x)-\frac13x^3\<br>由题意得：F(0)=F(1)=0\<br>在区间[0,\frac12]和[\frac12,1]上分别对F(x)用拉格朗日中值定理，得：\<br>\frac{F(\frac12)-F(0)}{\frac12-0}=F’(\xi),\xi\in(0,\frac12)\<br>\frac{F(1)-F(\frac12)}{1-\frac12}=F’(\eta),\eta\in(\frac12,1)\<br>则F’(\xi)+F’(\eta)=\frac{F(1)-F(0)}{\frac12}=0\<br>即F’(\xi)+F’(\eta)=0\\Rightarrow<br>f’(\xi)-\xi^2+f’(\eta)-\eta^2=0\故\Rightarrow<br>f’(\xi)+f’(\eta)=\xi^2+\eta^2<br>$$</p>
+<h1 id="李林四套卷"><a href="#李林四套卷" class="headerlink" title="李林四套卷"></a>李林四套卷</h1><h2 id="第一套"><a href="#第一套" class="headerlink" title="第一套"></a>第一套</h2><h3 id="9"><a href="#9" class="headerlink" title="9"></a>9</h3><p><strong>通解即行向量组等价</strong><br>$$<br>Ax=0与Bx=0同解\<br>\Leftrightarrow<br>A、B的行向量组等价(解方程组时行变换)\<br>\Leftrightarrow<br>r(A)=r(B)=r<br>\left(<br>\matrix<br>{<br>    A\<br>    B\<br>}<br>\right)\<br>\Rightarrow<br>r(A)=r(B)<br>$$</p>
+<h3 id="10"><a href="#10" class="headerlink" title="10"></a>10</h3><p><strong>合同必须为实对称矩阵</strong><br>$$<br>若A\sim B，则f(A)\sim f(B),A^{-1}\sim B^{-1},A^<em>\sim B^</em>\<br>(特例：A^T\nsim B^T)\<br>若A\sim B，则|A|=|B|,r(A)=r(B),Dr(A)=Dr(B)\<br>合同:对于任意一个n阶实对称矩阵A，必存在矩阵C，使得C^TAC=B，则称A、B合同\<br>\Leftrightarrow<br>正负惯性指数相同<br>$$</p>
+<h3 id="11"><a href="#11" class="headerlink" title="11"></a>11</h3><p><strong>反函数的导数和原函数的导数互为倒数</strong> </p>
+<p><strong>此题$g’(2)$对应为$\frac1{f’(0)}$，因为y=2时，x=0</strong><br>$$<br>\frac{dx}{dy}=\frac1{\frac{dy}{dx}}\<br>\Rightarrow<br>f’(x)=\frac1{g’(x)}\<br>或\Rightarrow<br>f’(x)g’(x)=1\<br>$$</p>
+<h3 id="15-2"><a href="#15-2" class="headerlink" title="15"></a>15</h3><p><strong>$\int\frac1{\sqrt{a^2-x^2}}dx=arcsin\frac ax+C)$</strong><br>$$<br>交换积分次序:\<br>I=\int_0^1e^ydy\int_y^1\frac1{\sqrt{-x^2+(y+1)x-y}}dx\<br>分母复杂，配方+换元：\<br>=\int_0^1e^ydy\int_y^1\frac1{\sqrt{(\frac{1-y}2)^2-[x^2-(y+1)x+\frac{(y+1)^2}4]}}dx\<br>=\int_0^1e^ydy\int_y^1\frac1{\sqrt{(\frac{1-y}2)^2-[x-\frac{y+1}2]^2}}dx\<br>(\int\frac1{\sqrt{a^2-x^2}}dx=arcsin\frac ax+C)\<br>=\int_0^1e^y\cdot arcsin\frac{x-\frac{y+1}2}{\frac{1-y}2}|_y^1dy\<br>=\pi\int_0^1e^ydy=\pi(e-1)<br>$$</p>
+<h3 id="21-9"><a href="#21-9" class="headerlink" title="21"></a>21</h3><p>$$<br>由泰勒公式，将f(x)在x=t\in[a,b]处展开，有：\<br>f(x)=f(t)+\frac{f’(t)}{1!}(x-t)+\frac{f’’(\xi)}{2!}(x-t)^2\<br>(其中\xi介于x与t之间)<br>$$</p>
+<h3 id="22-2"><a href="#22-2" class="headerlink" title="22"></a>22</h3><p>(1)</p>
+<p><strong>$A=Q\Lambda Q^{-1}=Q\Lambda Q^T$</strong><br>$$<br>求出a、b、c后，有:\\<br>Q^TAQ=\Lambda=<br>\left(<br>\matrix<br>{<br>    0\<br>    &amp; 1\<br>    &amp; &amp; 2<br>}<br>\right)=Q^{-1}AQ\<br>则\Rightarrow<br>A=Q\Lambda Q^{-1}=Q\Lambda Q^T<br>$$<br>（2）</p>
+<p><strong>实对称矩阵拆分成矩阵和其转置的乘积</strong><br>$$<br>A=P^TP+E\\Rightarrow<br>A+E=P^TP\\Rightarrow<br>Q^T(A+E)Q=Q^TP^TPQ\\Rightarrow<br>Q^TP^TPQ=<br>\left(<br>\matrix<br>{<br>    1\<br>    &amp;    2\<br>    &amp;    &amp;    3<br>}<br>\right)\\Rightarrow<br>(PQ)^TPQ=<br>\left(<br>\matrix<br>{<br>    1\<br>    &amp;    \sqrt2\<br>    &amp;    &amp;    \sqrt3<br>}<br>\right)<br>\left(<br>\matrix<br>{<br>    1\<br>    &amp;    \sqrt2\<br>    &amp;    &amp;    \sqrt3<br>}<br>\right)\\Rightarrow<br>PQ=<br>\left(<br>\matrix<br>{<br>    1\<br>    &amp;    \sqrt2\<br>    &amp;    &amp;    \sqrt3<br>}<br>\right)\\Rightarrow<br>P=<br>\left(<br>\matrix<br>{<br>    1\<br>    &amp;    \sqrt2\<br>    &amp;    &amp;    \sqrt3<br>}<br>\right)Q^T\\Rightarrow<br>P=\frac1{\sqrt2}<br>\left(<br>\matrix<br>{<br>    1&amp;    0&amp;    1\<br>    0&amp;    2&amp;    0\<br>    -\sqrt3&amp;    0&amp;    \sqrt3<br>}<br>\right)<br>$$</p>
+<h2 id="第二套"><a href="#第二套" class="headerlink" title="第二套"></a>第二套</h2><h3 id="5-1"><a href="#5-1" class="headerlink" title="5"></a>5</h3><p><strong>判断$f’’_{xy}$存在时判断$f’<em>x$对y可不可导；判断$f’’</em>{yx}$存在时判断$f’_y$对x可不可导</strong><br>$$<br>f’<em>x(x,y)=\frac{2x(x^2+y^4)-2x(x^2+y^2)}{(x^2+y^4)^2}\cdot sin(xy^2)+\frac{x^2+y^2}{x^2+y^4}cos(xy^2)\cdot y^2\<br>f’<em>y(x,y)=\frac{2y(x^2+y^4)-4y^3(x^2+y^2)}{(x^2+y^4)^2}\cdot sin(xy^2)+\frac{x^2+y^2}{x^2+y^4}cos(xy^2)\cdot 2xy\<br>\\<br>f’’</em>{xy}=lim</em>{y\rightarrow0}\frac{f’<em>x(0,y)-f’<em>x(0,0)}{y-0}=lim</em>{y\rightarrow0}\frac1y\ \ \ \ \ \nexists<br>\\<br>f’’</em>{yx}=lim_{x\rightarrow0}\frac{f’_y(x,0)-f’_y(0,0)}{x-0}=\frac0x=0<br>$$</p>
+<h3 id="7"><a href="#7" class="headerlink" title="7"></a>7</h3><p>$$<br>要求距离原点2米的区域内存在生物的数目\Rightarrow对0\sim2米的半径为r到dr的圆的夹面积上的积分\<br>夹面积展开为长方形：2\pi rdr\<br>则距离原点2米的区域内存在生物的数目为\int_0^2f(r)\cdot2\pi rdr\\Rightarrow<br>\pi aln(r^2+b)|_0^2\\Rightarrow<br>\pi a[ln(4+b)-lnb]=\pi aln(1+\frac4b)<br>$$</p>
+<h3 id="20-5"><a href="#20-5" class="headerlink" title="20"></a>20</h3><p><strong>给吃两个式子比大小，首先判断最简单方法能不能用构造函数令A-B=0用单调性证明</strong></p>
+<p><strong>此题给出了$f(0)=f’(0)=0$、$f’’(x)$严格单调递增，非负函数$f(x)$有二阶连续导数，用该方法求导，且有$f’’’(x)&gt;0$</strong><br>$$<br>给出\int_0^txf(x)dx &gt; \frac34\int_0^ttf(x)dx\<br>应考虑到令F(t)=\int_0^txf(x)dx-\frac34\int_0^ttf(x)dx\<br>F’(t)=\frac14tf(t)-\frac34\int_0^tf(x)dx\<br>F’’(t)=-\frac12f(t)+\frac14tf’(t)\<br>F’’’(t)=-\frac14f’(t)+\frac14tf’’(t)\<br>\Rightarrow=-\frac14[f’(t)-f’(0)]+\frac14tf’’(t)\<br>\Rightarrow=-\frac14tf’’(\xi)+\frac14tf’’(t)\ \ (其中\xi\in(0,t))\<br>\Rightarrow=\frac14t[f’’(t)-f’’(\xi)]\<br>因f’’(x)严格单调递增\Rightarrow\frac14t[f’’(t)-f’’(\xi)]&gt;0\Rightarrow F’’’(t)&gt;0\Rightarrow F’’(t)单调递增\<br>又F’’(0)=0,故F’’(t)&gt;F’’(0)=0,F’(t)单调递增\<br>又F’(0)=0,故F’(t)&gt;F’(0)=0,F(t)单调递增\<br>又F(0)=0,故F(t)&gt;F(0)=0\<br>\Rightarrow\int_0^txf(x)dx &gt; \frac34\int_0^ttf(x)dx<br>$$</p>
+<h3 id="21-10"><a href="#21-10" class="headerlink" title="21"></a>21</h3><p>(2)</p>
+<p><strong>一阶导证明题，利用微分方程反求辅助函数</strong></p>
+<p><strong>二阶导证明题，先降阶再求辅助函数</strong><br>$$<br>分析：\<br>要证f’(\eta)=f(\eta)-f(0)\\Rightarrow<br>f’(x)-f(x)=-f(0)\ \ \ (一阶线性微分方程)\则有：<br>f(x)=e^{-\int(-1)dx}[\int -f(0)\cdot e^{\int(-1)dx}dx+C]\\Rightarrow<br>=e^x[\int -f(0)\cdot e^{-x}dx+C]\\Rightarrow<br>=e^x[f(0)e^{-x}+C]\<br>则辅助函数C=f(x)e^{-x}-f(0)e^{-x}=e^{-x}(f(x)-f(0))\<br>\<br>解题：\<br>解：构造辅助函数\varphi(x)=e^{-x}[f(x)-f(0)]\<br>则\varphi(0)=0、\varphi(\xi)=e^{-\xi}[f(\xi)-f(0)]\\<br>(此时不知道f(\xi)和f(0)的情况，则讨论：)\\<br>①当f(\xi)=f(0)时,\varphi(\xi)=0\<br>则\varphi(0)=\varphi(\xi)=0\\Rightarrow<br>\varphi’(\eta)=0,\eta\in(0,\xi)\\Rightarrow<br>e^{-\eta}[f’(\eta)+f(0)-f(\eta)]=0\\Rightarrow<br>f’(\eta)=f(\eta)-f(0)\<br>\<br>②当f(\xi)\neq f(0)时,\varphi(\xi)\neq0\ \ (要么正要么负)\<br>不妨令\varphi(\xi)&gt;0,则f(\xi)&gt;f(0)<br>\\<br>(要证\varphi’(\eta)=0,此时罗尔定理用过,还有零点定理可用)(若有\varphi’(a)\cdot\varphi’(b)&lt;0\Rightarrow\exists\eta\in(a,b),\varphi’(\eta)=0)<br>\\<br>\varphi’(\xi)=e^{-\xi}[f’(\xi)+f(0)-f(\xi)]&lt;0\ \ (\xi\in(0,1))(其中f’(\xi)=0由第一问得出)\<br>\varphi’(\xi_1)=\frac{\varphi(\xi)-\varphi(0)}{\xi-0}=\frac{e^{-\xi}[f(\xi)-f(0)]-0}{\xi}&gt;0\ \ (\xi_1\in(0,\xi))\<br>\\<br>此时有：\varphi’(\xi)\cdot\varphi’(\xi_1)&lt;0\Rightarrow\varphi’(\eta)=0\ \ (\eta\in(\xi_1,\xi))\<br>则有：e^{-\eta}[f’(\eta)+f(0)-f(\eta)]=0\\Rightarrow<br>f’(\eta)=f(\eta)-f(0)\<br>$$</p>
+<h2 id="第三套"><a href="#第三套" class="headerlink" title="第三套"></a>第三套</h2><h3 id="2-1"><a href="#2-1" class="headerlink" title="2"></a>2</h3><p>$$<br>\frac{dy}{dt}=\frac{-2t}{1-t^2}-cosy\frac{dy}{dt}\\Rightarrow<br>\frac{dy}{dt}=\frac{-2t}{(1-t^2)(1+cosy)}\\<br>有x=0，t=0，y=0\<br>又x\rightarrow0^-\Rightarrow t\rightarrow0^-,y_x’&gt;0\<br>且x\rightarrow0^+\Rightarrow t\rightarrow0^+,y_x’&lt;0\<br>\<br>则在x=0的邻域(-\delta,\delta)(\delta&gt;0)内，有：\<br>\frac{dy}{dx}=\frac{-2t(1+t^2)}{(1-t^2)(1+cosy)}<br>\begin{cases}</p>
+<blockquote>
+<p>0,&amp;-\delta&lt;x&lt;0\<br>=0,&amp;x=0\<br>&lt;0,&amp;x&gt;\delta<br>\end{cases}\Rightarrow<br>则x=0是y=y(x)的极大值点<br>$$</p>
+</blockquote>
+<h3 id="11-1"><a href="#11-1" class="headerlink" title="11"></a>11</h3><p>$$<br>求lim_{n\rightarrow\infty}\Sigma_{k=1}^n(\frac k{2n^2+k}+\frac n{n^2+k^2})\\\<br>法一：\<br>①：\<br>lim_{n\rightarrow\infty}\Sigma_{k=1}^n\frac n{n^2+k^2}\<br>=lim_{n\rightarrow\infty}\Sigma_{k=1}^n\frac1n\frac1{1+(\frac kn)^2}\<br>=\int_0^1\frac1{1+x^2}dx=arctanx|<em>0^1=\frac\pi4\<br>②：\<br>有：lim</em>{n\rightarrow\infty}\Sigma_{k=1}^n\frac k{2n^2+k}<br>&lt;lim_{n\rightarrow\infty}\Sigma_{k=1}^n\frac k{2n^2+1}\<br>=lim_{n\rightarrow\infty}(\frac1{2n^2+1}+\frac2{2n^2+1}+…+\frac n{2n^2+1})<br>=lim_{n\rightarrow\infty}\frac{\frac n2(n+1)}{2n^2+1}=\frac14\<br>且：lim_{n\rightarrow\infty}\Sigma_{k=1}^n\frac k{2n^2+k}</p>
+<blockquote>
+<p>lim_{n\rightarrow\infty}\Sigma_{k=1}^n\frac k{2n^2+n}\<br>=lim_{n\rightarrow\infty}(\frac1{2n^2+n}+\frac2{2n^2+n}+…+\frac n{2n^2+n})<br>=lim_{n\rightarrow\infty}\frac{\frac n2(n+1)}{2n^2+n}=\frac14\<br>①+②\Rightarrow原式=\frac14+\frac\pi4<br>\\<br>法二：(选填)\<br>lim_{n\rightarrow\infty}\Sigma_{k=1}^n\frac k{2n^2+k}<br>=lim_{n\rightarrow\infty}\Sigma_{k=1}^n\frac1n\frac k{2n+\frac kn}\\Rightarrow<br>lim_{n\rightarrow\infty}\Sigma_{k=1}^n\frac1n\frac {\frac kn\cdot n}{2n+\frac kn}\\Rightarrow<br>\int_0^1lim_{n\rightarrow\infty}\frac{xn}{2n+x}dx\\Rightarrow<br>\int_0^1\frac x2dx=\frac14<br>$$</p>
+</blockquote>
+<h3 id="12-2"><a href="#12-2" class="headerlink" title="12"></a>12</h3><p>$$<br>\int\sqrt{1+sinx}dx\<br>=\int\sqrt{(1+2sin\frac x2cos\frac x2)}dx\<br>=\int\sqrt{(sin\frac x2+cos\frac x2)^2}dx\<br>=\int|sin\frac x2+cos\frac x2|dx\<br>=2|-cos\frac x2+sin\frac x2|+C<br>$$</p>
+<h3 id="19-2"><a href="#19-2" class="headerlink" title="19(2)"></a>19(2)</h3><p>公式：<strong>区间再现</strong><br>$$<br>\int_0^{\pi}xf(sinx)dx=\frac\pi2\int_0^{\pi}f(sinx)dx\<br>(换元\Rightarrow令x=b+a-t(上下限相加减去t))<br>$$<br>解题：<br>$$<br>求lim_{n\rightarrow\infty}\frac{\int_0^{n\pi}|xsinx|dx}{(n+1)^2}\<br>\\<br>(换元令x=n\pi+0-t)\<br>有I=\int_0^{n\pi}|xsinx|dx=\int_0^{n\pi}x|sinx|dx\quad(x&gt;0)\<br>=\int_{n\pi}^0(n\pi-t)|sinx(n\pi-t)|(-dt)=\int_0^{n\pi}(n\pi-t)|sint|dt\<br>=n\pi\int_0^{n\pi}|sint|dt-\int_0^{n\pi}t|sint|dt\quad(其中\int_0^{n\pi}|xsinx|dx与\int_0^{n\pi}t|sint|dt等价)\\Rightarrow<br>I=\int_0^{n\pi}|xsinx|dx=\frac{n\pi}2\int_0^{n\pi}|sint|dt\<br>=\frac{n\pi}2\cdot n\int_0^{\pi}sintdt=n^2\pi\<br>则lim_{n\rightarrow\infty}\frac{\int_0^{n\pi}|xsinx|dx}{(n+1)^2}<br>=lim_{n\rightarrow\infty}\frac{n^2\pi}{(n+1)^2}=\pi<br>$$</p>
+<h3 id="20-6"><a href="#20-6" class="headerlink" title="20"></a>20</h3><p>$$<br>\int\frac1{(cosx+sinx)^2}dx\\Rightarrow<br>=\int\frac1{(1+tanx)^2}\cdot\frac1{cos^2x}dx\<br>=\int\frac1{(1+tanx)^2}d(tanx)=\int\frac1{(1+tanx)^2}d(1+tanx)\<br>=-\frac1{1+tanx}+C<br>$$</p>
+<h3 id="21-11"><a href="#21-11" class="headerlink" title="21"></a>21</h3><p>(1)求导弹飞行轨迹y=y(x)的表达式</p>
+<p>分析：<br>$$<br>当导弹飞到p(x,y)点时，飞机就在导弹飞行轨迹在x处的切线与y轴的交点\<br>切线的斜率=对应的轨迹在x处的导函数值\<br>此时飞机坐标为(0,vt)\<br>$$<br>解题：<br>$$<br>k_切=y’<em>x=lim</em>{\Delta x\rightarrow0}\frac{\Delta y}{\Delta x}=\frac{v\cdot t-y}{0-x}\即\Rightarrow<br>y’<em>x=-\frac{vt-y}x&amp;——①\<br>(此时有微分方程，但还有未知数t)\<br>2v\cdot t=-\int</em>{16}^x\sqrt{(1+(y’)^2)}dx\qquad(弧长微元相加)&amp;——②\<br>由①得vt=y-xy’_x&amp;——③\<br>②、③\Rightarrow2(y-xy’<em>x)=-\int</em>{16}^x\sqrt{(1+(y’)^2)}dx\<br>(两边求导)\<br>2[y’-y’-xy’’]=-\sqrt{1+(y’)^2}\\Rightarrow<br>-2xy’’=-\sqrt{1+(y’)^2}\<br>(降阶)\<br>令y’=p,y’’=p’\<br>-2xp’=-\sqrt{1+p^2}\Rightarrow2x\frac{dp}{dx}=\sqrt{1+p^2}\\Rightarrow<br>2\frac1{\sqrt{1+p^2}}dp=\frac1xdx\Rightarrow<br>\int2\frac1{\sqrt{1+p^2}}dp=\int\frac1xdx\Rightarrow<br>2ln(p+\sqrt{(1+p^2)})=lnx+lnC_1\\Rightarrow<br>[p+\sqrt{(1+p^2)}]^2=C_1x&amp;——④\<br>(此时有条件x=16,y=0\Rightarrow y’_x=0即p=0)，带入④\<br>得C_1=\frac1{16}\Rightarrow[p+\sqrt{(1+p^2)}]^2=\frac1{16}x\\Rightarrow<br>p+\sqrt{1+p^2}=\frac14x^{\frac12}&amp;——⑤\<br>(倒数有理化)\<br>(取倒数)\Rightarrow\frac1{p+\sqrt{1+p^2}}=4x^{-\frac12}\<br>(有理化)\Rightarrow\sqrt{(1+p^2)}-p=4x^{-\frac12}&amp;——⑥\<br>⑤-⑥得：2p=\frac14x^{\frac12}-4x^{-\frac12}\Rightarrow y’=p=\frac18x^{\frac12}-2x^{-\frac12}\<br>y=\int[\frac18x^{\frac12}-2x^{-\frac12}]dx\\Rightarrow<br>y=\frac1{12}x^{\frac32}-4x^{\frac12}+C_2\<br>(此时有条件x=16,y=0\Rightarrow y(16)=0)\<br>得C_2=\frac{32}3\<br>则y=\frac1{12}x^{\frac32}-4x^{\frac12}+\frac{32}3<br>$$<br>(2)求飞机被击中位置及所需时间T<br>$$<br>由第一问y=\frac1{12}x^{\frac32}-4x^{\frac12}+\frac{32}3，令x=0\Rightarrow y=\frac{32}3\<br>即飞机被击中位置为(0,\frac{32}3)\<br>则v\cdot T=\frac{32}3\Rightarrow T=\frac{32}{3v}<br>$$</p>
+<h3 id="22-3"><a href="#22-3" class="headerlink" title="22"></a>22</h3><p>$$<br>设\alpha为3维非零实列向量，A=E-\frac a{\alpha^T\alpha}\alpha\alpha^T为正交矩阵，其中a\neq0，E为3阶单位矩阵<br>$$</p>
+<p>(1)求a的值，并证明$\alpha$与$A\alpha$线性相关</p>
+<p>分析：<br>$$<br>\①AA^T=E\②A^T=A^{-1}\③每一列都是单位向量，且两两正交\公式(A+B)^T=A^T+B^T<br>$$<br>解题：<br>$$<br>A^T=(E-\frac a{\alpha^T\alpha}\alpha\alpha^T)^T=E-\frac a{\alpha^T\alpha}\alpha\alpha^T=A\\Rightarrow<br>AA^T=A^2=E\<br>A^2=(E-\frac a{\alpha^T\alpha}\alpha\alpha^T)(E-\frac a{\alpha^T\alpha}\alpha\alpha^T)<br>=E-\frac a{\alpha^T\alpha}\alpha\alpha^T-\frac a{\alpha^T\alpha}\alpha\alpha^T<br>+(\frac a{\alpha^T\alpha})^2\alpha\alpha^T\cdot\alpha\alpha^T\<br>=E-2\frac a{\alpha^T\alpha}\alpha\alpha^T+\frac {a^2}{\alpha^T\alpha}\alpha\alpha^T\\Rightarrow<br>E=E-2\frac a{\alpha^T\alpha}\alpha\alpha^T+\frac {a^2}{\alpha^T\alpha}\alpha\alpha^T\\Rightarrow<br>(a^2-2a)\frac1{\alpha^T\alpha}\cdot\alpha^T\alpha=0\\alpha^T\alpha是非零矩阵\Rightarrow<br>a=0(舍去)/a=2\\Rightarrow<br>a=2<br>\\<br>A\alpha=(E-\frac a{\alpha^T\alpha}\alpha\alpha^T)\alpha=\alpha-\frac a{\alpha^T\alpha}\alpha\alpha^T\alpha<br>=(1-a)\alpha=-\alpha\Rightarrow<br>\alpha与A\alpha线性相关<br>$$<br>(2)当$\alpha=(b,b,0)^T(b\neq0)$时，求正交变换x=Qy将二次型$f(x_1,x_2,x_3)=x^TAx$化为规范形<br>$$<br>当\alpha=(b,b,0)^T(b\neq0)时\<br>\alpha^T\alpha=2b^2,<br>\alpha\alpha^T=b^2<br>\left(<br>\matrix<br>{<br>    1&amp;    1&amp;    0\<br>    1&amp;    1&amp;    0\<br>    0&amp;    0&amp;    0<br>}<br>\right)\<br>则A=E-\frac a{\alpha^T\alpha}\alpha\alpha^T=<br>\left(<br>\matrix<br>{<br>    1&amp;    0&amp;    0\<br>    0&amp;    1&amp;    0\<br>    0&amp;    0&amp;    1<br>}<br>\right)-\frac2{2b^2}\cdot b^2<br>\left(<br>\matrix<br>{<br>    1&amp;    1&amp;    0\<br>    1&amp;    1&amp;    0\<br>    0&amp;    0&amp;    0<br>}<br>\right)=<br>\left(<br>\matrix<br>{<br>    0&amp;    -1&amp;    0\<br>    -1&amp;    0&amp;    0\<br>    0&amp;    0&amp;    1<br>}<br>\right)\<br>然后求特征值、求正交变换矩阵Q(施密特正交化、单位化)<br>$$</p>
+<h2 id="第四套"><a href="#第四套" class="headerlink" title="第四套"></a>第四套</h2><h3 id="13-1"><a href="#13-1" class="headerlink" title="13"></a>13</h3><p>$$<br>v=\sqrt te^{-\sqrt t}\Rightarrow t\rightarrow+\infty时,v\rightarrow0\<br>s=vt\Rightarrow ds=v\cdot dt\\Rightarrow<br>s=\int_0^{+\infty}\sqrt te^{-\sqrt t}dt<br>$$</p>
+<h3 id="14-1"><a href="#14-1" class="headerlink" title="14"></a>14</h3><p>$$<br>(x^2+y^2)^2=x^4+y^4\\Rightarrow<br>(r^2)^3=r^4(cos^4\theta+sin^4\theta)\\Rightarrow<br>r=\sqrt{cos^4\theta+sin^4\theta}\<br>S=\int_0^{2\pi}d\theta\int_0^{\sqrt{cos^4\theta+sin^4\theta}}rdr<br>$$</p>
+<h3 id="15-3"><a href="#15-3" class="headerlink" title="15"></a>15</h3><p>题：<br>$$<br>设f(t)=\int_0^tdx\int_x^te^{-(x-y)^2}dy\quad(t&gt;0),则f’’(1)=<br>$$<br>解：<br>$$<br>f’(t)=\int_0^te^{-(x-t)^2}dx\<br>(令x-t=u)\<br>f’(t)=\int_{-t}^0e^{-u^2}du=-\int_0^{-t}e^{-u^2}du\<br>f’’(t)=-(e^{-t^2})\cdot(-1)=e^{-t^2}\<br>故f’’(1)=e^{-1}<br>$$</p>
+<h3 id="17-2"><a href="#17-2" class="headerlink" title="17"></a>17</h3><p>(2)题：<br>$$<br>求极限lim_{n\rightarrow+\infty}\Pi_{i=1}^n\frac{n^2+i^2}{n^2}<br>$$<br>第一问：<br>$$<br>\frac1n-ln(1+\frac1n)&lt;\frac1{2n^2}<br>$$<br>解：<br>$$<br>记a_n=\Pi_{i=1}^n\frac{n^2+i^2}{n^2}\<br>则lna_n=\Sigma_{i=1}^nln(1+\frac i{n^2})<br>=\Sigma_{i=1}^n[ln(1+\frac i{n^2})-\frac i{n^2}+\frac i{n^2}]\\Rightarrow<br>=\Sigma_{i=1}^n[ln(1+\frac i{n^2})-\frac i{n^2}]+\Sigma_{i=1}^n\frac i{n^2}\\<br>且lim_{n\rightarrow+\infty}\Pi_{i=1}^n\frac i{n^2}=lim_{n\rightarrow+\infty}\Pi_{i=1}^n\frac in\cdot\frac1n<br>=\int_0^1xdx=\frac12\\<br>由第一问结论，有：<br>\quad-\frac12\Sigma_{i=1}^n(\frac i{n^2})^2&lt;\Sigma_{i=1}^n[ln(1+\frac i{n^2})-\frac i{n^2}]&lt;0\\<br>又lim_{n\rightarrow+\infty}[-\frac12\Sigma_{i=1}^n(\frac i{n^2})^2]<br>=-\frac12lim_{n\rightarrow+\infty}\frac1n\Sigma_{i=1}^n\frac{i^2}{n^2}\cdot\frac1n\<br>而lim_{n\rightarrow+\infty}\Sigma_{i=1}^n\frac{i^2}{n^2}\cdot\frac1n=\int_0^1x^2dx=\frac13\<br>因此lim_{n\rightarrow+\infty}[-\frac12\Sigma_{i=1}^n(\frac i{n^2})^2]<br>=-\frac16lim_{n\rightarrow+\infty}\frac1n=0\\<br>由夹逼准则，有：\Sigma_{i=1}^n[ln(1+\frac i{n^2})-\frac i{n^2}]=0\<br>从而lna_n=0+\frac12=\frac12\\Rightarrow<br>a_n=e^{\frac12}\<br>即lim_{n\rightarrow+\infty}\Pi_{i=1}^n\frac{n^2+i^2}{n^2}=e^{\frac12}<br>$$</p>
+<h3 id="18-5"><a href="#18-5" class="headerlink" title="18"></a>18</h3><p>题：<br>$$<br>设(x-1)^2+y^2=1内切于椭圆\frac{x^2}{a^2}+\frac{y^2}{b^2}=1(a&gt;0,b&gt;0),求a,b的值,使椭圆的面积最小<br>$$<br>解：<strong>求a,b则只留a,b把x,y化为a,b</strong><br>$$<br>设(x-1)^2+y^2=1与\frac{x^2}{a^2}+\frac{y^2}{b^2}=1在第一象限内的切点为M(x_0,y_0),则有：\<br>\begin{cases}<br>    1-(x_0-1)^2=b^2(1-\frac{x_0^2}{a^2})&amp;&amp;——①(式子带入)\<br>    \frac{1-x_0}{y_0}=-\frac{b^2x_0}{a^2y_0}&amp;&amp;——②(切线斜率相等)<br>\end{cases}\<br>由②得x_0=\frac{a^2}{a^2-b^2},带入①得：a^2-a^2b^2+b^4=0\<br>则题目转化为求条件a^2-a^2b^2+b^4=0下的椭圆面积\pi ab的极小值\<br>令L(a,b,\lambda)=\pi ab+\lambda(a^2-a^2b^2+b^4),则\<br>\begin{cases}<br>    L’_a=\pi b+2\lambda(a-ab^2)=0\<br>    L’_b=\pi a+2\lambda(2b^3-a^2b)=0\<br>    L’_\lambda=a^2-a^2b^2+b^4=0<br>\end{cases}\<br>解得a=\frac{3\sqrt2}2,b=\frac{\sqrt6}2<br>$$</p>
+<h3 id="22-4"><a href="#22-4" class="headerlink" title="22"></a>22</h3><p>题：<br>$$<br>设A是3阶实对称矩阵，\alpha=(-1,1,1)^T满足(A-2E)\alpha=0,且r(A)=1\<br>(Ⅰ)k_1(1,1,0)^T+k_2(1,-1,0)^T(k_1,k_2为任意常数)是否为方程组Ax=0的通解?\<br>(Ⅱ)求方程组Ax=0的通解\<br>(Ⅲ)求正交变换x=Qy将二次型f(x_1,x_2,x_3)=x^TAx化为标准型<br>$$<br>解：<br>$$<br>(Ⅰ)由于A是3阶实对称矩阵,且(A-2E)\alpha=0,即A\alpha=2\alpha\<br>所以\lambda_1=2是A的特征值,其对应的特征向量为\alpha_1=\alpha=(-1,1,1)^T,又因为r(A)=1\<br>故：A\sim\Lambda=<br>\left(<br>\matrix<br>{<br>    2\<br>    &amp;    0\<br>    &amp;    &amp;    0<br>}<br>\right)即\lambda_2=\lambda_3=0是A的二重特征值\<br>若k_1(1,1,0)^T+k_2(1,-1,0)^T是Ax=0的通解,则\alpha_2=(1,1,0)^T,\alpha_3=(1,-1,0)^T为(0E-A)x=0的一个基础解系\<br>故A对应于\lambda_2=\lambda_3=0的特征向量为\mu_2\alpha_2+\mu_3\alpha_3(\mu_2,\mu_3为不全为0的任意常数)\<br>又因为A的不同特征值对应的特征向量必正交,所以应有：\alpha_1^T\alpha_2=0,\alpha_1^T\alpha_3=0\<br>而\alpha_1^T\alpha_3=-2\neq0，故\alpha_3不是A的特征向量,即\alpha_3不是(0E-A)x=0的解,也不是Ax=0的解\<br>所以k_2\alpha_2+k_3\alpha_3不是Ax=0的通解<br>\\<br>(Ⅱ)设\lambda_2=\lambda_3=0对应的特征向量\beta=(x_1,x_2,x_3)^T,则\alpha_1^T\beta=-x_1+x_2+x_3=0\<br>解得一个基础解系为\beta_1=(1,1,0)^T,\beta_2=(1,0,1)^T\<br>即满足A\beta_1=0,A\beta_2=0,故Ax=0的通解为\<br>l_1\beta_1+l_2\beta_2=l_1(1,1,0)^T+l_2\beta_2(1,0,1)^T(l_1,l_2为任意常数)<br>\\<br>(Ⅲ)将\alpha=(-1,1,1)^T,\beta_1=(1,1,0)^T,\beta_2=(1,0,1)^T正交单位化,有：\<br>\gamma_1=\frac1{\sqrt3}(-1,1,1)^T,\gamma_2=\frac1{\sqrt2}(1,1,0)^T,\gamma_3=\frac1{\sqrt6}(1,-1,2)^T\<br>令Q=(\gamma_1,\gamma_2,\gamma_3),则Q为正交矩阵,x=Qy为所求正交变换,所求标准型为2y_1^2<br>$$</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2023" class="archive-year">2023</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2023/01/07/408/" class="archive-article-date">
-  	<time datetime="2023-01-07T08:59:07.855Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-01-07</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2023/01/07/%E6%95%B0%E5%AD%A6/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2023/01/07/%E6%94%BF%E6%B2%BB/" class="archive-article-date">
-  	<time datetime="2023-01-07T08:59:07.839Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-01-07</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2023/01/07/%E6%95%B0%E5%AD%A6/" class="archive-article-date">
-  	<time datetime="2023-01-07T08:59:07.831Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-01-07</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+<nav id="article-nav">
+  
+    <a href="/2023/01/07/%E6%94%BF%E6%B2%BB/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+</nav>
 
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+        
+    </div>
+</aside>
+
+
+
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -251,8 +496,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

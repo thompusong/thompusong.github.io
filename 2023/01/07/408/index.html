@@ -6,15 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives: 2023 | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="数据结构逻辑结构一、线性结构(1)线性表(2)受限线性表①栈②队列③串(3)推广线性表①数组②广义表二、非线性结构(1)集合(2)树形结构①一般树②二叉树(3)图状结构①有向图②无向图森林森林的先根序遍历对应其二叉树的先根序遍历 森林的中根序遍历对应其二叉树的中根序遍历 B树节点数个数对于m阶B树 假设一个节点存储元素个数为X 根节点：1 ≤  X  ≤ m - 1（根节点最少有2个孩子） 非根节">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/2023/index.html">
+<meta property="og:url" content="http://example.com/2023/01/07/408/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="数据结构逻辑结构一、线性结构(1)线性表(2)受限线性表①栈②队列③串(3)推广线性表①数组②广义表二、非线性结构(1)集合(2)树形结构①一般树②二叉树(3)图状结构①有向图②无向图森林森林的先根序遍历对应其二叉树的先根序遍历 森林的中根序遍历对应其二叉树的中根序遍历 B树节点数个数对于m阶B树 假设一个节点存储元素个数为X 根节点：1 ≤  X  ≤ m - 1（根节点最少有2个孩子） 非根节">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="d:/thompusong/笔记/考研笔记/408图/排序算法比较.jpg">
+<meta property="og:image" content="d:/thompusong/笔记/考研笔记/408图/可见不可见寄存器.png">
+<meta property="article:published_time" content="2023-01-07T08:59:07.855Z">
+<meta property="article:modified_time" content="2022-12-14T08:25:12.649Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="d:/thompusong/笔记/考研笔记/408图/排序算法比较.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,85 +157,620 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-408" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h1><h2 id="逻辑结构"><a href="#逻辑结构" class="headerlink" title="逻辑结构"></a>逻辑结构</h2><h3 id="一、线性结构"><a href="#一、线性结构" class="headerlink" title="一、线性结构"></a>一、线性结构</h3><h4 id="1-线性表"><a href="#1-线性表" class="headerlink" title="(1)线性表"></a>(1)线性表</h4><h4 id="2-受限线性表"><a href="#2-受限线性表" class="headerlink" title="(2)受限线性表"></a>(2)受限线性表</h4><h5 id="①栈"><a href="#①栈" class="headerlink" title="①栈"></a>①栈</h5><h5 id="②队列"><a href="#②队列" class="headerlink" title="②队列"></a>②队列</h5><h5 id="③串"><a href="#③串" class="headerlink" title="③串"></a>③串</h5><h4 id="3-推广线性表"><a href="#3-推广线性表" class="headerlink" title="(3)推广线性表"></a>(3)推广线性表</h4><h5 id="①数组"><a href="#①数组" class="headerlink" title="①数组"></a>①数组</h5><h5 id="②广义表"><a href="#②广义表" class="headerlink" title="②广义表"></a>②广义表</h5><h3 id="二、非线性结构"><a href="#二、非线性结构" class="headerlink" title="二、非线性结构"></a>二、非线性结构</h3><h4 id="1-集合"><a href="#1-集合" class="headerlink" title="(1)集合"></a>(1)集合</h4><h4 id="2-树形结构"><a href="#2-树形结构" class="headerlink" title="(2)树形结构"></a>(2)树形结构</h4><h5 id="①一般树"><a href="#①一般树" class="headerlink" title="①一般树"></a>①一般树</h5><h5 id="②二叉树"><a href="#②二叉树" class="headerlink" title="②二叉树"></a>②二叉树</h5><h4 id="3-图状结构"><a href="#3-图状结构" class="headerlink" title="(3)图状结构"></a>(3)图状结构</h4><h5 id="①有向图"><a href="#①有向图" class="headerlink" title="①有向图"></a>①有向图</h5><h5 id="②无向图"><a href="#②无向图" class="headerlink" title="②无向图"></a>②无向图</h5><h2 id="森林"><a href="#森林" class="headerlink" title="森林"></a>森林</h2><p>森林的先根序遍历对应其二叉树的先根序遍历</p>
+<p>森林的中根序遍历对应其二叉树的中根序遍历</p>
+<h2 id="B树"><a href="#B树" class="headerlink" title="B树"></a>B树</h2><h3 id="节点数个数"><a href="#节点数个数" class="headerlink" title="节点数个数"></a>节点数个数</h3><p>对于m阶B树</p>
+<p>假设一个节点存储元素个数为<strong>X</strong></p>
+<p>根节点：1 ≤  <strong>X</strong>  ≤ m - 1（根节点最少有2个孩子）</p>
+<p>非根节点：$\lceil m/2 \rceil -1 \leq X \leq m-1$</p>
+<p>如果有子节点，<strong>子节点个数 y = x + 1（即孩子结点数  =  节点内元素个数+1）</strong></p>
+<h3 id="结点孩子数"><a href="#结点孩子数" class="headerlink" title="结点孩子数"></a>结点孩子数</h3><p>根节点：2 ≤ Y ≤ m</p>
+<p>非根节点：$\lceil m/2 \rceil \leq Y \leq m$</p>
+<h3 id="分裂原则"><a href="#分裂原则" class="headerlink" title="分裂原则"></a>分裂原则</h3><p>若一节点内关键字数溢出，则从中间关键字分裂</p>
+<h2 id="排序算法比较"><a href="#排序算法比较" class="headerlink" title="排序算法比较"></a>排序算法比较</h2><p><img src="D:\thompusong\笔记\考研笔记\408图\排序算法比较.jpg" alt="排序算法比较"></p>
+<p>稳定：直接插入排序、归并排序、基数排序、冒泡排序</p>
+<p>时间复杂度为$nlog_2n$的算法：快速排序、堆排序、归并排序</p>
+<p>空间复杂度为O(1)的算法：直接插入排序、冒泡排序、希尔排序、选择排序、堆排序</p>
+<h3 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h3><p>2017-11</p>
+<p>下列排序方法中，若将顺序存储更换为链式存储，则算法的时间效率会降低的是？</p>
+<p>希尔排序、堆排序</p>
+<p>（<strong>希尔排序和堆排序都利用了顺序存储的随机访问特性</strong>，而链式存储不支持这种性质，所以时间复杂度会增加）</p>
+<p>2015-10</p>
+<p>删除小根堆堆顶元素后，由最后一个元素替代堆顶元素，然后：</p>
+<p>①比较根元素孩子结点</p>
+<p>②比较根元素孩子结点最大/最小元素和根节点元素</p>
+<p>③比较交换元素的子树</p>
+<h2 id="图"><a href="#图" class="headerlink" title="图"></a>图</h2><h3 id="无向图"><a href="#无向图" class="headerlink" title="无向图"></a>无向图</h3><p><strong>无向图边数的两倍等于各定点度数的总和</strong>（一条边对应两个点对应两度）</p>
+<h2 id="关键路径"><a href="#关键路径" class="headerlink" title="关键路径"></a>关键路径</h2><p>关键路径是指<strong>权值之和最大</strong>的路径</p>
+<p>无论存在一条还是多条关键路径，增加任一关键活动的时间都会延长工程的工期，因为关键路径始终是权值之和最大的那条路径</p>
+<h2 id="编程题"><a href="#编程题" class="headerlink" title="编程题"></a>编程题</h2><h3 id="树"><a href="#树" class="headerlink" title="树"></a>树</h3><p>2014-41:</p>
+<p>递归计算带权路径是$deep\times weight$</p>
+<p>计算总和时，设置静态变量</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">static int sum=0;</span><br></pre></td></tr></table></figure>
+
+<p>使得递归调用不会让sum再赋值为0</p>
+<h3 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h3><p>2019-41:</p>
+<p>要求空间复杂度为O(1)，则不可另起链表，则需要用到重要链表使用技巧：<strong>逆置</strong></p>
+<p>此题步骤为：</p>
+<p>①找到中间节点</p>
+<p>首先设两个指针p、q，p每走一步q走两步，则当q走到链尾时，q刚好在链中</p>
+<p>②后半段元素逆置</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//p所指节点为中间节点(也即需要逆置的第一个节点的前一个节点)，q为后半段链表的首节点(也即西药逆置的第一个节点)</span></span><br><span class="line"><span class="keyword">while</span>(q!=<span class="literal">NULL</span>)</span><br><span class="line">&#123;</span><br><span class="line">    r=q-&gt;next;</span><br><span class="line">    q-&gt;next=p-&gt;next;</span><br><span class="line">    p-&gt;next=q;</span><br><span class="line">    q=r;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>③从单链表前后两段中依次各取一个节点，按题意要求排列</p>
+<h1 id="计算机组成原理-amp-操作系统"><a href="#计算机组成原理-amp-操作系统" class="headerlink" title="计算机组成原理&amp;操作系统"></a>计算机组成原理&amp;操作系统</h1><h2 id="每秒钟内完成浮点数操作次数"><a href="#每秒钟内完成浮点数操作次数" class="headerlink" title="每秒钟内完成浮点数操作次数"></a>每秒钟内完成浮点数操作次数</h2><p>MFLOPS、GFLOPS、TFLOPS、PFLOPS、EFLOPS、ZFLOPS</p>
+<h2 id="n位整数表示范围（补码、原码、无符号数）"><a href="#n位整数表示范围（补码、原码、无符号数）" class="headerlink" title="n位整数表示范围（补码、原码、无符号数）"></a>n位整数表示范围（补码、原码、无符号数）</h2><p>n位<strong>原码</strong>整数的表示范围为：<br>$$<br>-(2^{n-1}-1) \leq x \leq 2^{n-1}-1<br>$$<br>n位<strong>补码</strong>整数的表示范围为：<br>$$<br>-2^{n-1} \sim x \sim 2^{n-1}-1<br>$$<br>n位<strong>无符号</strong>整数的表示范围为：<br>$$<br>0 \sim 2^n-1<br>$$</p>
+<h2 id="浮点数运算"><a href="#浮点数运算" class="headerlink" title="浮点数运算"></a>浮点数运算</h2><p>IEEE754单精度浮点数的符号位、阶码位、尾数位所占用的位数分别是1、8、23位，</p>
+<p>其中，<strong>阶码的取值范围是1$\sim$254</strong></p>
+<h3 id="规格化"><a href="#规格化" class="headerlink" title="规格化"></a>规格化</h3><p><strong>对阶</strong>是较小的阶码对齐至较大的阶码，不会发生阶码溢出</p>
+<p><strong>右规和尾数舍入</strong>过程中，阶码加1而<strong>可能发生上溢</strong></p>
+<p><strong>左规</strong>，阶码减1，<strong>可能发生下溢</strong></p>
+<p><strong>尾数溢出</strong>时，可能仅产生误差，结果<strong>不一定溢出</strong></p>
+<h2 id="程序控制器、指令寄存器"><a href="#程序控制器、指令寄存器" class="headerlink" title="程序控制器、指令寄存器"></a>程序控制器、指令寄存器</h2><p>程序控制器(PC)给出下一条指令的访存地址(指令在内存中的地址)，<strong>取决于存储器的字数</strong></p>
+<p>指令寄存器(IR)用于接收取得的指令，<strong>取决于指令字长</strong></p>
+<h2 id="存储管理"><a href="#存储管理" class="headerlink" title="存储管理"></a>存储管理</h2><h3 id="分页管理"><a href="#分页管理" class="headerlink" title="分页管理"></a>分页管理</h3><h3 id="分段管理"><a href="#分段管理" class="headerlink" title="分段管理"></a>分段管理</h3><p>若进程P1和P2共享段S，则：</p>
+<p>①在物理内存最仅保存一份段S的内容</p>
+<p>②P1和P2共享段S在共享段表中的段表项</p>
+<p>（段表项中存放的是段的<strong>物理地址</strong>（包括段始址和段长度），对于共享段S来说物理地址唯一）</p>
+<p>③P1和P2都不在使用段S时才回收段S所占的内存空间</p>
+<p>④段S在P1和P2中<strong>可能具有不同的段号</strong></p>
+<p>（段S对于进程P1和P2来说，使用位置可能不同，所以在不同进程中的逻辑段号可能不同）</p>
+<h2 id="映射方式"><a href="#映射方式" class="headerlink" title="映射方式"></a>映射方式</h2><p>虚页号=标记tag+Cache组号/行号</p>
+<h3 id="直接映射"><a href="#直接映射" class="headerlink" title="直接映射"></a>直接映射</h3><p>地址结构为：标记tag+Cache行号+块内地址</p>
+<h3 id="全相连映射（1路组相联）"><a href="#全相连映射（1路组相联）" class="headerlink" title="全相连映射（1路组相联）"></a>全相连映射（1路组相联）</h3><p>地址结构为：标记tag+块内地址</p>
+<h3 id="组相联映射"><a href="#组相联映射" class="headerlink" title="组相联映射"></a>组相联映射</h3><p>地址结构为：标记tag+Cache组号+块内地址</p>
+<h3 id="例题-1"><a href="#例题-1" class="headerlink" title="例题"></a>例题</h3><p>1.若计算机主存地址为32位，按字节编址，Cache数据区大小为32KB，主存块大小为32B，</p>
+<p>采用直接映射方式和回写（write Back）策略，则Cache行的位数为？</p>
+<p>$\frac{32KB}{32B}=1K=2^{10}个Cache行$，物理地址占$\frac{32B}{B}=32=2^5$，即5位，则剩下32-10-5=17位为tag标志部分；</p>
+<p>又因为<strong>采用写回法，所以Cache行的总位数应为32B（数据位）+17bit（tag位）+1bit（脏位）+1bit（有效位）=275bit</strong></p>
+<p><strong>Cache总位数或总容量=数据块的总位数+标记项的总位数</strong></p>
+<p><strong>标记项=标记位+有效位+脏位（全写法没有脏位，写回法有脏位）+替换控制位（有替换算法时）</strong></p>
+<p>2.2018-44、45</p>
+<p>44</p>
+<p>（1）物理地址由实页号和页内地址拼成</p>
+<p>（3）</p>
+<p>①组号每次和2个Cache块比较，所以为二路组相联映射。</p>
+<p>②2个一组，采用LRU替换算法，则有1位lLRU位；采用写回法，则有1位脏位</p>
+<p>③Cache的总容量=数据总容量+标记项总容量</p>
+<p>数据总容量=8组 * 每组2行 * 每一行 $2^5$=512B</p>
+<p>标记项总容量=（20位标记位+1位LRU位+1位脏位+1位有效位）* 8组 * 每组2行=368bit=46B</p>
+<p>Cache总容量=512B+46B=558B</p>
+<p>有效位的作用是指出所在Cache行中的信息是否有效</p>
+<p>45</p>
+<p>（2）①PDBR为页目录基址地址寄存器，其存储页目录表的<strong>物理内存基地址</strong>。</p>
+<p>②进程切换时，地址空间发生变化，PDBR发生变化</p>
+<p>③同一进程的线程共享该进程的地址空间，PBDR不发生变化</p>
+<p>2015-46</p>
+<p><strong>页和页框大小相同</strong></p>
+<p>（1）页内偏移量12位-&gt;页和页框大小都为$2^{12}$=4KB</p>
+<p>（2）页目录占$\frac{2^{10}\times4}{2^{12}}=1$页、页表占$\frac{2^{10}\times2^{10}\times4}{2^{12}}=1024$页，共占1025页</p>
+<p>（<strong>页表包含页表项，页表的每一行就是一个页表项</strong>）</p>
+<p>（3）因为虚拟地址 0100 0000 H 和 0111 2048 H 的最高 10 位值都是4，页目录号相同，所以访问同一个二级页表</p>
+<h2 id="存储器"><a href="#存储器" class="headerlink" title="存储器"></a>存储器</h2><p>2020-15</p>
+<h3 id="Cache和TLB"><a href="#Cache和TLB" class="headerlink" title="Cache和TLB"></a>Cache和TLB</h3><h4 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h4><p>Cache由SRAM组成</p>
+<p>TLB（快表）通常由相联存储器组成，也可由SRAM组成</p>
+<p>DRAM需要不断刷新，性能偏低（速度慢），不适合组成TLB和Cache</p>
+<h4 id="联系"><a href="#联系" class="headerlink" title="联系"></a>联系</h4><p>命中率都与程序局部性有关</p>
+<p><strong>缺失后都需要去访问主存</strong></p>
+<p>缺失处理都可以由硬件实现</p>
+<h4 id="缺失"><a href="#缺失" class="headerlink" title="缺失"></a>缺失</h4><p>Cache缺失要只访问内存</p>
+<h3 id="DRAM"><a href="#DRAM" class="headerlink" title="DRAM"></a>DRAM</h3><p>2018-17</p>
+<p>假定DRAM芯片中存储阵列的行数为r，列数为c，对于一个2K*1位的DRAM芯片，为保证其地址引脚数最少，并尽量减小刷新开销，则r、c的取值分别是：（）A.2048、1        B.64、32        C.32、64        D.1、2048</p>
+<p>由题意，DRAM采用的是行列地址线复用技术，我们尽量<strong>选用行列差值不要太大的</strong>。对于B、C选项，地址线只需6根（取行或列所需地址线的最大值），排除A、D。其次，<strong>为减小刷新开销，而DRAM一般输按行刷新的，所以应选行数值较少的</strong></p>
+<p>2015-15</p>
+<p>DRAM采用地址复用技术，则<strong>地址线为原来的一半</strong></p>
+<h2 id="多道程序系统"><a href="#多道程序系统" class="headerlink" title="多道程序系统"></a>多道程序系统</h2><p>多道程序系统的优点是：</p>
+<p>①CPU利用率大</p>
+<p>②系统吞吐量大</p>
+<p>③I/O设备利用率</p>
+<p>（多道程序系统通过组织作业使CPU总有一个作业可执行，从而提高了CPU的利用率、系统吞吐量和I/O设备利用率）</p>
+<h2 id="流水线技术"><a href="#流水线技术" class="headerlink" title="流水线技术"></a>流水线技术</h2><p>单周期CPU即指所有指令的指令周期为一个时钟周期</p>
+<p>基本流水线在理想情况下，一个时钟周期处理一条指令，CPI=1</p>
+<p>多发射流水线技术（动态多发射/超标量流水线；静态多发射/超长指令字技术）在每个时钟周期可以处理多条指令，CPI&lt;1</p>
+<p>多周期CPU，每个阶段用一个时钟去完成，每种指令所用的时钟数可以不同，CPI&gt;1</p>
+<h2 id="指令、总线"><a href="#指令、总线" class="headerlink" title="指令、总线"></a>指令、总线</h2><h3 id="总线带宽"><a href="#总线带宽" class="headerlink" title="总线带宽"></a>总线带宽</h3><p>总线带宽=总线工作频率*（总线宽度/8）   （总线宽度即总线位宽，通常指数据总线的根数）</p>
+<p>总线工作频率=时钟频率/N（总线周期=N个时钟周期）</p>
+<h3 id="总线结构"><a href="#总线结构" class="headerlink" title="总线结构"></a>总线结构</h3><p>①靠近CPU的总线速度较快</p>
+<p>②存储器总线可支持突发传送方式（一般使用支持突发传输方式的总线提高存储器的读写效率）</p>
+<p>③总线之间需通过桥接器相连</p>
+<p>（PC I-Expres * 16采用<strong>串行传输</strong>的方式）</p>
+<h3 id="总线数据传输率"><a href="#总线数据传输率" class="headerlink" title="总线数据传输率"></a>总线数据传输率</h3><p>总线传输速率=总线工作频率*（总线宽度/8）</p>
+<p>可提高同步总线数据传输率的方法：</p>
+<p>①增加总线宽度</p>
+<p>②提高总线工作频率</p>
+<p>③支持突发传输（在一个周期内传输存储地址连续的多个数据字，从而提高了传输效率）</p>
+<p>（采用地址/数据线复用技术，只<strong>减少了线的数量</strong>，节省了成本，<strong>并不能提高传输率</strong>）</p>
+<h3 id="机器字长"><a href="#机器字长" class="headerlink" title="机器字长"></a>机器字长</h3><p>机器字长是指CPU内部用于整数运算的数据通路的宽度</p>
+<p>CPU内部数据通路是指CPU内部的的数据流经的路径及路径上的部件，主要是CPU内部进行数据运算、储存和传送的部件，这些部件的宽度基本要一致才能相互匹配</p>
+<p>因此，<strong>机器字长等于CPU内部用与整数运算的运算器位数和通用寄存器宽度</strong></p>
+<h3 id="计算指令条数"><a href="#计算指令条数" class="headerlink" title="计算指令条数"></a>计算指令条数</h3><p>若含有零地址、一地址、二地址，地址码为6位，采用扩展操作码，则：</p>
+<p>$一条二地址指令会占用2^6条一地址指令\一条一地址指令会占用2^6条零地址指令$</p>
+<h3 id="总线概念"><a href="#总线概念" class="headerlink" title="总线概念"></a>总线概念</h3><p>总线是在两个或多个设备之间进行通信的传输介质</p>
+<h3 id="单总线结构数据通路"><a href="#单总线结构数据通路" class="headerlink" title="单总线结构数据通路"></a>单总线结构数据通路</h3><p>单总线数据通路将所有寄存器的输入/输出端都在链接在一条公共的道路上，一个时钟内只允许一次操作，无法完成指令的所有操作</p>
+<h3 id="杂"><a href="#杂" class="headerlink" title="杂"></a>杂</h3><p>1.异步总线采用握手的方式进行通信，每次握手的过程完成一次通信，但<strong>一次通信往往会交换多位而非一位数据</strong></p>
+<p>2.同步总线由时钟信号定时，<strong>时钟频率不一定等于工作频率</strong>（一次总线事务不一定在一个时钟周期内完成）</p>
+<h3 id="例题-2"><a href="#例题-2" class="headerlink" title="例题"></a>例题</h3><p>1.2022-43</p>
+<p>1.$ALU输入端A、B，输出端F最高位分别为A_{15}、B_{15}、F_{15},标志寄存器FR中符号标志为SF、溢出标志为OF$</p>
+<p>$①SF的逻辑表达式是：SF=F_{15}$</p>
+<p>$②A加B时OF的逻辑表达式为：OF=\bar A \bar B F+A B \bar F$</p>
+<p>$③A减B时OF的逻辑表达式为：OF=A \bar B \bar F + \bar A B F$</p>
+<p>2.控制信号由控制部件CU产生，<strong>指令寄存器IR和标志寄存器FR</strong>的输出信号会连接到控制部件(<strong>CU</strong>)的输出端</p>
+<p>2.2021-43</p>
+<p>①ALU宽度即ALU运算对象的宽度，<strong>通常与字长相同</strong></p>
+<p>②可寻址空间为多少字节？$\frac{容量}{字节}$</p>
+<p>③指令寄存器位数（即指令字长，题目给出）</p>
+<p>④I型和J型格式总共最多可定义几种操作？</p>
+<p>I和J共用操作码空间且全0被R型占用，所以剩下$2^6-1$=63种</p>
+<p>⑤通用寄存器最多有多少个？</p>
+<p>只用两位对寄存器编码，所以最多为$2^2$=4个</p>
+<p>3.2020-43</p>
+<p>（3）</p>
+<p>对于①没有乘法指令，需要进行不断的加法移位循环指令操作来实现乘法操作，因而需要反复执行多条质量，而每条指令都要取指令、译码、取数、执行并保存结果，所以执行时间很长</p>
+<p>对于②③，都只需要执行一条乘法指令实现乘法操作，不过②中的乘法指令需要多个时钟周期才能完成，而③中的乘法指令可以在一个时钟周期内完成，所以③的执行时间最短</p>
+<p>（<strong>阵列乘法器可以实现并行乘法运算，而使用ALU和位移器实现的是串行乘法运算</strong>）</p>
+<p>4.2019-45、46</p>
+<p>45：</p>
+<p>①12、16是调用，16才是递归调用（call指令）</p>
+<p>②函数结束返回指令ret也是无条件跳转指令</p>
+<p>③PC执行完一条指令会自动+1，所以call指令相对寻址过程中，（PC）物理地址已经为：0040 102A H</p>
+<p>相对寻址：（目标地址=（PC）+偏移地址）</p>
+<p>⑤（1）63位：1位符号位+62位数值位，因为计算机只有32位，<strong>扩展需要舍入</strong>，</p>
+<p>则<strong>乘积的高32位为全0或全1</strong>，若非全0或非全1，就发生溢出</p>
+<p>（2）要使CPU在发生<strong>溢出时转异常处理</strong>，编译器应该在imul指令后应加一条“<strong>溢出自陷指令</strong>”，使得CPU自动查询溢出标志OF，当OF=1时调出“溢出异常处理程序”</p>
+<p>5.2017-16</p>
+<p>三地址指令有29条，所以操作码自至少5位，则剩余32-29=3种操作码给二地址，二地址最多有3*64=192满足条件，所以最少为5+6+6+6=23位，而计算机按字节编址，需要8的倍数，所以指令字长至少应该是24位</p>
+<p>6.2017-43、44</p>
+<p>43</p>
+<p>（2）</p>
+<p>$f_1(23)和f_2(23)返回值相等$</p>
+<p>float有1个符号位，8个指数位，23个底数位，23个底数位可以表示24位的底数。</p>
+<p>$f_1(23)的机器数是00FFFFFFH$</p>
+<p>$f_2(23)的机器数是4B7FFFFFH$</p>
+<p>（3）舍入</p>
+<p>（5）①<strong>IEEE754标准用“阶码全1、尾数全0”表示无穷大</strong>，则机器数7F80 0000H对应的值是:$+\infty$</p>
+<p>②当n=126时，$f(126)=2^{127}-1=1.1…1*2^{126}$，对应阶码为127+126=253，尾数部分舍入后阶码加1，最终阶码为254，是IEEE754单精度格式表示的最大阶码。故使f2结果不溢出的最大n值为126</p>
+<p>③当n=23时，$f(23)为24位1，float型数有24位有效位，所以不需要舍入，结果精确$</p>
+<p>44</p>
+<p>（1）CISC，CISC复杂，<strong>指令长短不一</strong></p>
+<p>（RISC精简，指令长度相同）</p>
+<p>（2）f1的第一条指令虚拟地址为0400 1020H，最后一条指令虚拟地址为0040 107FH，</p>
+<p>所以f1的机器指令代码长度为0040 107FH - 0040 1020H + 1 = 60H = 96字节</p>
+<p>（3）i=0000 0000H，n-1=FFFF FFFFH  不够减，CF=1</p>
+<p>（4）不能。</p>
+<p>f2中的变量power是float型，其机器数中不包含最高有数位，但包含了阶码部分，将其作为一个整体左移时，并不能实现“乘2”的功能</p>
+<p>2015-35</p>
+<p>传输效率最大化$\Rightarrow$不确认也可以连续发送多个帧，设连续发送n帧：<br>$$<br>一个帧的发送时延为：\frac{1000B}{128kbps}=62.5ms\<br>对于采用滑动窗口协议的流水线机制，我们有如下公式：\<br>链路利用率=\frac{n\times发送时延}{R_{TT}+发送时延}\<br>依题意有：\frac{n\times62.5ms}{2\times250ms+62.5ms}\ge80%\<br>得:n\ge7.2\<br>帧序号的比特数k要满足2^k\ge n+1\<br>\Rightarrow<br>k\ge4<br>$$</p>
+<p>2015-43、44</p>
+<p>43</p>
+<p>由题意可得：</p>
+<p>①机器字长=存储字长=指令字长=16位</p>
+<p>②按字节编址，存取单位为16位$\Rightarrow$每存取一个字，地址变化2个单位（即PC自增+2）</p>
+<p>(1)<img src="D:\thompusong\笔记\考研笔记\408图\可见不可见寄存器.png" alt="可见不可见寄存器"></p>
+<p>（3）SRout所控制部件的名称或作用是？</p>
+<p>控制移位器与总线之间数据通路的链接与断开（单总线结构，计算结果不能立即输出到总线）</p>
+<p>（4）端点①~⑨中，哪些端点须连接到控制部件的输出端？</p>
+<p>①SRout用来控制三态门、②SRop用来控制移位寄存器、③ALUop用来控制ALU、⑤Tin用来控制暂存器、⑧MUXop用来控制二路选择器</p>
+<p>（④、⑥、⑦、⑨是连接端点）</p>
+<p>（5）④需要连接到总线（数据来自总线传输），而这里增加了二路选择器MUX，PC自增要+2，而图右边的PC并没有+2自增操作，则需要ALU来完成PC的自增操作，而MUX的0号端口有常数2，则<strong>通过MUX控制ALU完成PC自增操作或完成算数操作</strong>。</p>
+<p>所以连线及方向为：⑥—&gt;⑨、⑦—&gt;④</p>
+<p>（6）自增操作PC=PC+2</p>
+<p>44</p>
+<p><strong>指令条数为$2^{操作码位数}$</strong></p>
+<p>（1）寻址方式：2种——1位；寄存器：4种——1位</p>
+<p>则操作码为16-1-2-1-2-1-2=7位，可以表述$2^7$=128条指令</p>
+<p>（2）若inc、sh1、sub指令的操作码分别为01H、02H和03H，则以下指令对应的机器代码分别是？<br>$$<br>①inc\qquad\qquad R_1;\qquad (R_1)+1\rightarrow R_1\qquad\qquad\qquad 000\ 0001\ 0\ 01\ 0\ 00\ 0\ 00\<br>单地址指令，末6位为0，操作码前七位为01H\<br>目的操作数R_1使用寄存器直接寻址，寻址方式位为0,寄存器信号R_1\rightarrow01\<br>则机器代码为0240H\<br>\<br>②sh1\qquad R_2,R_1;\qquad (R_1)&lt;&lt;1\rightarrow R_2\qquad\qquad\quad 000\ 0010\ 0\ 10\ 0\ 01\ 0\ 00\<br>二地址指令，末3位为0，操作码前七位为02H\<br>目的操作数R_2使用寄存器直接寻址，寻址方式位为0，寄存器信号R_2\rightarrow10\<br>源操作数R_1使用寄存器直接寻址，寻址方式位为0，寄存器信号R_1\rightarrow01\<br>则机器代码为0488H\<br>\<br>③sub\qquad R_3,(R_1),R_2;\qquad ((R_1))-(R_2)\rightarrow R_3\quad 000\ 0011\ 0\ 11\ 1\ 01\ 0\ 10\<br>三地址指令，操作码前七位为03H\<br>目的操作数R_3使用寄存器直接寻址，寻址方式位为0，寄存器信号R_3\rightarrow11\<br>源操作数R_1使用寄存器间接寻址，寻址方式位为1，寄存器信号R_1\rightarrow01\<br>源操作数R_2使用寄存器直接寻址，寻址方式位为0，寄存器信号R_2\rightarrow10\<br>则机器代码为06EAH<br>$$<br>（3）</p>
+<p>①完成PC=PC+2操作，需要MUX连接到2，则MUXop=0</p>
+<p>⑤要读取寄存器R1当中的内容，MEMop=read</p>
+<p>（4）</p>
+<p>sub R3,(R1),R3,(R2) 指令在图中控制信号一行表示一个周期，需要4个时钟周期</p>
+<p>（由图可得指令为：((R1)) - (R2)-&gt;R3,则需要①取(R1)，②取((R1))，③取(R2)，④计算送R3）</p>
+<p>inc R1表示R1寄存器中的内容+1，首先需要将R1当中的内容送总线，并且送到ALU端口，完成+1操作之后，要再将结果送回总线，所以需要2个时钟周期</p>
+<p>（由图可得指令为：(R1) + 1-&gt;R1,则需要①取(R1)，②计算送R1）</p>
+<h2 id="I-O"><a href="#I-O" class="headerlink" title="I/O"></a>I/O</h2><p>I/O指令实现的数据传送通常发生在：通用寄存器和I/O端口之间</p>
+<p>（<strong>I/O端口是指接口中用于暂存信息的寄存器</strong>。由于主机和I/O设备的工作方式和工作速度有很大差异，I/O端口就应运而生。在执行一条指令时，CPU使用地址总线选择所请求的I/O端口，使用数据总线在CPU寄存器和端口之间传输数据）</p>
+<h2 id="页面替换"><a href="#页面替换" class="headerlink" title="页面替换"></a>页面替换</h2><h4 id="缺页异常处理：-缺页要访问磁盘，比较慢"><a href="#缺页异常处理：-缺页要访问磁盘，比较慢" class="headerlink" title="缺页异常处理：(缺页要访问磁盘，比较慢)"></a>缺页异常处理：(缺页要访问磁盘，比较慢)</h4><p><strong>必做：①从磁盘调页到内存中  ②将新调入的页与页框建立联系  ③修改页的存在位</strong></p>
+<p>可能做：④淘汰内存中的页（无空闲页框）</p>
+<h4 id="影响缺页率的因素："><a href="#影响缺页率的因素：" class="headerlink" title="影响缺页率的因素："></a>影响缺页率的因素：</h4><p>①页置换算法  ②工作集的大小（分配给进程的物理块数）  ③进程的数量（进程越多，竞争越激烈）</p>
+<p>无影响的因素：①页缓冲队列的长度（页缓冲队列将被淘汰的页面缓存下来，暂时不写回磁盘）</p>
+<h2 id="系统调用"><a href="#系统调用" class="headerlink" title="系统调用"></a>系统调用</h2><p>发生系统调用时，<strong>CPU</strong>执行陷入（Trap）指令，检测到内中断后，<strong>由CPU负责保存断点和程序状态字，并将CPU模式改为内核态</strong></p>
+<p>然后执行<strong>操作系统</strong>内核的系统调用入口程序，<strong>保存通用寄存器的内容，再调用某个特定的系统调用服务例程</strong></p>
+<h2 id="交叉编址"><a href="#交叉编址" class="headerlink" title="交叉编址"></a>交叉编址</h2><p>2017-13</p>
+<p>由4个DRAM芯片采用交叉编址方式构成主存地址最低二位表示该字节存储的芯片编号。double型变量占64位，8字节。它的主存地址804001AH最低二位是10，说明它从编号为2的芯片开始存储（编号从0开始）。一个存储周期可以对所有芯片各读取1字节，需要3轮</p>
+<p>$T+(k-1)Δt，64/8=8，T+(8-1)*(T/4)=\frac{11T}4\sim3T$</p>
+<h2 id="主存储器（MM）和控制存储器（CS）"><a href="#主存储器（MM）和控制存储器（CS）" class="headerlink" title="主存储器（MM）和控制存储器（CS）"></a>主存储器（MM）和控制存储器（CS）</h2><h3 id="主存储器"><a href="#主存储器" class="headerlink" title="主存储器"></a>主存储器</h3><p>①在CPU外</p>
+<p>②按地址访问</p>
+<p>③存储指令和数据</p>
+<p>④用RAM和ROM实现</p>
+<h3 id="控制存储器"><a href="#控制存储器" class="headerlink" title="控制存储器"></a>控制存储器</h3><p>①在CPU内</p>
+<p>②按微指令的地址访问</p>
+<p>③存储微指令</p>
+<p>④用ROM实现</p>
+<h2 id="DMA"><a href="#DMA" class="headerlink" title="DMA"></a>DMA</h2><p>①<strong>DMA传送前由设备驱动程序设置传送参数</strong></p>
+<p>（每类设备都配置一个设备驱动程序，设备驱动程序向上层用户程序提供一组标准接口，负责实现对设备发出各种具体操作指令，用户程序不能直接和DMA打交道）</p>
+<p>②数据传送前由DMA控制器请求总线控制权</p>
+<p>③数据传送由DMA控制器直接控制总线完成</p>
+<p>④DMA传送结束后的处理由中断服务程序完成</p>
+<h3 id="例题-3"><a href="#例题-3" class="headerlink" title="例题"></a>例题</h3><p>2018-43</p>
+<p>（1）①定时查询I/O方式，每准备好32位数据就查询一次，准备好32位数据的时间是：32b/2MB=2μs，所以最多每隔2μs必须查询一次</p>
+<p>②每秒查询次数是1s/2μs=0.5M次，每次I/O都至少执行10条指令，CPI为4（即每条指令占4个时钟周期），所以每秒用于A的I/O时间至少需要0.5M * 10 * 4=20M个时钟周期，所以占整个CPU时间的百分比为20M/500M=0.04=4%</p>
+<p>（2）</p>
+<p>法一：B准备好数据的时间是32b/40MB=0.1us，则每秒查询1s/0.1us=10M次，则每秒响应中断时间需要10M*400=4000M个时钟周期&gt;500M，所以不能采用I/O中断方式</p>
+<p>法二：中断响应和中断处理的时间为：400/500M=0.8μs，而设备B准备32位数据的时间为32b/40MB=0.1μs，不能采用I/O中断方式</p>
+<p>（3）设备B每秒传送数据40MB/1000B=40k次，需要时钟周期数为40k * 500=20M个时钟周期</p>
+<p>则占用CPU总时间的20M/500M=0.04=4%</p>
+<h2 id="磁盘"><a href="#磁盘" class="headerlink" title="磁盘"></a>磁盘</h2><p>磁盘存储器的<strong>最小读写单位为一个扇区</strong>，即<strong>磁盘按块存取</strong></p>
+<h3 id="系统启动"><a href="#系统启动" class="headerlink" title="系统启动"></a>系统启动</h3><p>系统启动过程中，执行顺序：</p>
+<p>①ROM中的引导程序</p>
+<p>②磁盘引导程序</p>
+<p>③分区引导程序</p>
+<p>④操作系统的初始化程序</p>
+<p>启动系统时，首先运行ROM中的引导代码（bootstrap）。</p>
+<p>为执行某个分区的操作系统的初始化程序，需要先执行磁盘引导程序以指示引导到那个分区，然后执行该分区的引导程序，用于引导该分区的操作系统。</p>
+<h3 id="磁盘启动"><a href="#磁盘启动" class="headerlink" title="磁盘启动"></a>磁盘启动</h3><p>把硬盘制作为启动盘时，需要完成的顺序：</p>
+<p>①物理格式化</p>
+<p>②对磁盘进行分区</p>
+<p>③逻辑格式化</p>
+<p>④操作系统的安装</p>
+<p>磁盘只有通过分区和逻辑格式化后才能安装系统和储存信息。</p>
+<p><strong>物理格式化</strong>（又称低级格式化，通常出厂时就已完成）的作用是为每个磁道划分扇区，安排扇区在磁道中的排列顺序，并对已损坏的磁道各扇区做“坏”标记等。</p>
+<p>随后将磁盘的真题存储空间<strong>划分为相互独立的多个分区</strong>（如Windows中划分C盘、D盘等），这些分区可以用作多种用途，如安装不同的操作系统和应用程序、储存文件等。</p>
+<p>然后进行<strong>逻辑格式化</strong>（又称高级格式化），其作用是对扇区进行逻辑编号、建立逻辑盘的引导记录、文件分配表、文件目录表和数据区等。</p>
+<p>最后才是<strong>操作系统的安装</strong>。</p>
+<p>磁盘扇区的划分是在磁盘的物理格式化操作中完成的，</p>
+<p>文件系统根目录的建立是在逻辑格式化操作中完成的</p>
+<h3 id="空闲磁盘管理"><a href="#空闲磁盘管理" class="headerlink" title="空闲磁盘管理"></a>空闲磁盘管理</h3><p>①空闲表法</p>
+<p>②空闲链表法</p>
+<p>③位示图法</p>
+<p>④成组链接法</p>
+<p>⑤<strong>文件分配表（FAT）</strong></p>
+<p>文件分配表（FAT）的表项与物理磁盘块一一对应，并且可以用一个特殊的数字-1表示文件的最后一块，用-2表示这个磁盘块是空闲的(当然也可以是-3、-4……)。因此文件分配表不仅记录了文件中各个块的先后连接关系，同时还标记了空闲的磁盘块，操作系统可以通过FAT对文件存储空间进行管理</p>
+<h3 id="磁盘缓冲区"><a href="#磁盘缓冲区" class="headerlink" title="磁盘缓冲区"></a>磁盘缓冲区</h3><p>磁盘和内存的速度差异，决定了可以将内存经常访问的文件调入磁盘缓冲区，高速缓存中复制的访问比磁盘I/O的机械操作要快的多</p>
+<p>（即：<strong>系统内存中设置磁盘缓冲区的主要目的是：减少磁盘I/O次数</strong>）</p>
+<h3 id="例题-4"><a href="#例题-4" class="headerlink" title="例题"></a>例题</h3><p>1.假设某磁盘驱动器中有4个双面盘片，每个盘面有20000个磁道，每个磁道有500个扇区，每个扇区可记录512直接的数据，盘片转速为7200RPM(转/分)，平均寻道时间为5ms，则：</p>
+<p>①每个扇区包含数据及其地址信息，地址信息分为3个字段，分别是：<strong>柱面号、磁道号、扇区号</strong></p>
+<p>②各字段至少占多少位？ </p>
+<p>柱面号字段：$\lceil log_220000 \rceil$=15位</p>
+<p>磁头号字段：四个盘片，每个盘片有两个盘面（双面）$\lceil log_2(4*2) \rceil$=3位</p>
+<p>扇区号字段：$\lceil log_2500 \rceil$=9位</p>
+<p>③一个扇区的平均访问时间约为多少？<strong>访问时间=寻道时间+延迟时间+传输时间</strong></p>
+<p>寻道时间=5ms</p>
+<p>延迟时间=$\frac{1}{2r}$=$\frac{1}{2*120}$（7200转/分=120转/秒）$\approx$ 8.33ms</p>
+<p>传输时间= $\frac{每个磁道含多少扇区}{r}$=$\frac{500}{8.33}$ $\approx$ 9.18ms</p>
+<p>④若CPU检测到DMA控制器的总线请求信号时也需要访问主存，则DMA控制器是否可以获得总线使用权？</p>
+<p><strong>DMA控制器可以优先获得总线使用权。</strong></p>
+<p>因为<strong>一旦磁盘开始读写，就必须按时完成数据传送，否则数据缓冲区中的数据会发生流失</strong></p>
+<p>2.将簇号<strong>转换成磁盘物理地址</strong>的过程由<strong>磁盘驱动程序</strong>完成</p>
+<p>2017-32</p>
+<p>系统将数据从磁盘读到内存的过程的顺序：</p>
+<p>①初始化DMA控制器并启动磁盘</p>
+<p>②从磁盘传输一块数据到内存缓冲区</p>
+<p>③DMA控制器发出中断请求</p>
+<p>④执行“DMA结束”中断服务程序</p>
+<p>（数据传输完再中断）</p>
+<p>2016-47</p>
+<p>（3）若FAT的每个表项仅存放簇号，占2字节，则FAT的最大长度为多少字节？</p>
+<p>2字节即16位，最多有$2^{16}$个项，则FAT最大长度为$2B\times2^{16}=128KB$</p>
+<p>该文件系统支持的文件最大长度是多少？</p>
+<p>$2^{16}\times4KB=256MB$</p>
+<h2 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h2><h3 id="内部异常"><a href="#内部异常" class="headerlink" title="内部异常"></a>内部异常</h3><p><strong>内部异常</strong>是指来自CPU内部产生的中断，都是<strong>在指令的执行过程中产生</strong>的</p>
+<p>对于非法指令、除数为零等异常，无法通过异常处理程序恢复故障，因此不能回到原断点执行，必须终止进程的执行</p>
+<p>即：<strong>异常处理后可能回到原断点执行也可能从下一条开始执行</strong></p>
+<h2 id="中断"><a href="#中断" class="headerlink" title="中断"></a>中断</h2><h3 id="中断隐指令"><a href="#中断隐指令" class="headerlink" title="中断隐指令"></a>中断隐指令</h3><p>①关中断</p>
+<p>②保存断点</p>
+<p>③引出中断服务程序</p>
+<h3 id="中断服务程序"><a href="#中断服务程序" class="headerlink" title="中断服务程序"></a>中断服务程序</h3><p>1.通用寄存器的保护</p>
+<p>2.定时器产生时钟中断后，由时钟中断服务程序更新的部分内容是：</p>
+<p>①内核中时钟变量的值</p>
+<p>②当前进程占用CPU的时间</p>
+<p>③当前进程在时间片内的剩余执行时间</p>
+<p>（<strong>时钟中断的主要工作是处理和时间有关的信息以及决定是否执行调度程序</strong>，和时间有关的所有信息，包括系统时间、进程的时间片、延时、使用CPU的时间、各种定时器等）</p>
+<h3 id="中断I-O方式"><a href="#中断I-O方式" class="headerlink" title="中断I/O方式"></a>中断I/O方式</h3><p>在<strong>程序中断I/O方式</strong>中，CPU和打印机直接交换，<strong>打印字符直接传输到打印机的I/O端口，不会涉及主存地址</strong>，而CPU和打印机通过I/O端口中状态口和控制口来实现交互</p>
+<h3 id="例题-5"><a href="#例题-5" class="headerlink" title="例题"></a>例题</h3><p>1.<strong>外设准备数据时间应≥ 中断处理时间</strong></p>
+<p>若外设准备时间 ≤ 中断处理时间（即数据准备时间快，输出时间慢），会导致缓冲区数据被覆盖导致数据丢失</p>
+<p>2.<strong>操作系统初始化</strong>过程中需要<strong>创建中断向量表</strong>，用于实现“中断处理”</p>
+<p>3.<strong>中断服务程序在内核态下执行</strong>，若只能在用户态下检测和响应中断，显然无法实现多重中断</p>
+<p>4.在多重中断中，CPU只有在检测到中断请求信号后，才会进入中断响应周期，</p>
+<p>进入中断响应周期时，说明此时CPU一定处于中断允许状态</p>
+<p>5.可通过中断屏蔽字改变可屏蔽中断的<strong>处理优先级</strong></p>
+<p>6.一旦可屏蔽中断请求信号有效，CPU将立即响应？:x:</p>
+<p><strong>CPU响应中断需要满足3个条件</strong>：</p>
+<p>①中断源有中断请求</p>
+<p>②CPU允许中断及开中断</p>
+<p>③一条指令执行完毕，且没有更紧迫的任务</p>
+<p>7.影响请求分页系统有效（平均）访存时间的是：</p>
+<p>①缺页率</p>
+<p>②<strong>磁盘读写时间</strong>（影响缺页中断的处理时间）（页换到磁盘）</p>
+<p>③内存访问时间</p>
+<p>④执行缺页处理程序的CPU时间</p>
+<h2 id="文件"><a href="#文件" class="headerlink" title="文件"></a>文件</h2><p>1.求文件系统所能创建的文件数量的上限，<strong>只要求索引节点号数目</strong></p>
+<h3 id="例题-6"><a href="#例题-6" class="headerlink" title="例题"></a>例题</h3><p>2018-46</p>
+<p>（1）文件用簇来存放</p>
+<p>有（$8+1024+1024^2+1024^3$个簇），则最大文件长度为（$8+1024+1024^2+1024^3$）* 4KB=32KB+4MB+4GB+4TB</p>
+<p>（2）文件索引节点号总数为1M *  4KB/64B=64M</p>
+<p>5600B的文件占2簇，512M个簇可以存放256M个文件</p>
+<p>文件数目受限于文件索引节点数，所以最多能存放64M个图像文件</p>
+<p>（3）F1大小为6KB&lt;直接地址项8 * 4KB=32KB；</p>
+<p>f2大小为40KB&gt;32KB，需要去一级间接地址读一级索引表，所以时间不一样</p>
+<h2 id="管程"><a href="#管程" class="headerlink" title="管程"></a>管程</h2><p>在同一时刻，管程中只能有一个进程在执行</p>
+<p>如果进程A执行了x.wait()操作，那么该进程会阻塞，并挂到条件变量x对应的阻塞队列上</p>
+<p>（即不再有互斥值，wait一定阻塞，signal一定唤醒）</p>
+<h2 id="互斥、共享"><a href="#互斥、共享" class="headerlink" title="互斥、共享"></a>互斥、共享</h2><p>1.实现临界区互斥机制<strong>必须遵循</strong>的是：</p>
+<p>①空闲让进</p>
+<p>②忙着等待</p>
+<p>③有限等待</p>
+<p>“让权等待”准则，不一定要实现，如皮特森算法</p>
+<h3 id="例题-7"><a href="#例题-7" class="headerlink" title="例题"></a>例题</h3><p>2019-43</p>
+<p>哲学家问题</p>
+<p>可以等价为n个进程，每个进程需要2个资源，该进程一共有n个，则限制至多允许n-1个哲学家同时“抢”筷子，那么至少会有1个哲学家可以获得两根筷子并顺利进餐，于是不可能发生死锁的情况</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">semaphore bowl;		<span class="comment">//互斥碗的使用</span></span><br><span class="line">semaphore chopsticks[n];		<span class="comment">//互斥筷子的使用</span></span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++) chopsticks[i]=<span class="number">1</span>;		<span class="comment">//设置筷子数量</span></span><br><span class="line">bowl=<span class="built_in">min</span>(n<span class="number">-1</span>,m);		<span class="comment">//bowl≤n-1，确保不死锁</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span>(TRUE)</span><br><span class="line">&#123;</span><br><span class="line">    思考;</span><br><span class="line">    <span class="built_in">P</span>(bowl);</span><br><span class="line">    <span class="built_in">P</span>(chopsticks[i]);</span><br><span class="line">    <span class="built_in">P</span>(chopsticks[(i+<span class="number">1</span>)%n]);</span><br><span class="line">    就餐;</span><br><span class="line">    <span class="built_in">V</span>(chopsticks[i]);</span><br><span class="line">    <span class="built_in">V</span>(chopsticks[(i+<span class="number">1</span>)%n]);</span><br><span class="line">    <span class="built_in">V</span>(bowl);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>2018-32</p>
+<p>下列同步机制，可以实现<strong>让权等待</strong>的是：<strong>信号量方法</strong>（记录型信号量）</p>
+<p>（<strong>硬件方法实现进程同步不能实现让权等待</strong>（swap指令、TestAndSet指令），Peterson算法满足有限等待但不满足让权等待）</p>
+<p>（记录型信号量由于引入阻塞机制，消除了不让权等待的情况）</p>
+<h2 id="进程、线程"><a href="#进程、线程" class="headerlink" title="进程、线程"></a>进程、线程</h2><p>①内核级线程的调度由操作系统完成</p>
+<p>②用户级线程间的切换比内核线程间的切换效率高</p>
+<p>③用户级线程可以在不支持内核级线程的操作系统上实现</p>
+<p>④<strong>在一对一模型下</strong>，<strong>操作系统为每个用户级线程建立一个线程控制块</strong></p>
+<p>（一对一，多对一，多对多）</p>
+<h2 id="死锁"><a href="#死锁" class="headerlink" title="死锁"></a>死锁</h2><p>“<strong>限制用户申请资源的顺序</strong>”属于<strong>死锁预防</strong>的范畴</p>
+<p>（死锁预防，采用破坏产生死锁的四个必要条件中的一个或几个，以防止发生死锁。其中之一的“破坏循环等待条件”，一般采用顺序资源分配法，首先给系统的资源编号，规定每个进程必须按编号递增的顺序请求资源，也就是i案子了用户申请资源的顺序）</p>
+<h2 id="杂-1"><a href="#杂-1" class="headerlink" title="杂"></a>杂</h2><p>1.SDN对上层开发者提供的编程接口称为<strong>北向接口</strong>，而<strong>南向接口</strong>负责控制平面和数据平面间的通信</p>
+<p>（向上：北向接口；向下：南向接口）</p>
+<p>2.特权指令只能在内核态下执行，常见的<strong>特权指令</strong>有：</p>
+<p>①有关I/O设备操作的指令</p>
+<p>②有关访问程序状态的指令</p>
+<p>③存取特殊寄存器指令</p>
+<p>④其他指令</p>
+<h1 id="计算机网络"><a href="#计算机网络" class="headerlink" title="计算机网络"></a>计算机网络</h1><h2 id="TCP-IP模型"><a href="#TCP-IP模型" class="headerlink" title="TCP/IP模型"></a>TCP/IP模型</h2><h3 id="网络接口层"><a href="#网络接口层" class="headerlink" title="网络接口层"></a>网络接口层</h3><p>兼并了物理层和数据链路层</p>
+<p>既是传输数据的物理媒介，也可以为网络层提供一条准确无误的线路</p>
+<h3 id="网际层"><a href="#网际层" class="headerlink" title="网际层"></a>网际层</h3><p>尽力而为的服务，的理选择适合的路由（路由选择），不保证分组有序到达</p>
+<h3 id="传输层（运输层）"><a href="#传输层（运输层）" class="headerlink" title="传输层（运输层）"></a>传输层（运输层）</h3><p>端到端报文段传输、对话管理</p>
+<h3 id="应用层"><a href="#应用层" class="headerlink" title="应用层"></a>应用层</h3><p>为用户提供应用程序</p>
+<h2 id="OSI模型"><a href="#OSI模型" class="headerlink" title="OSI模型"></a>OSI模型</h2><h3 id="物理层"><a href="#物理层" class="headerlink" title="物理层"></a>物理层</h3><p>主要负责实际的信号传输</p>
+<h3 id="数据链路层"><a href="#数据链路层" class="headerlink" title="数据链路层"></a>数据链路层</h3><p>在两个主机上建立数据链路连接，向物理层传输数据信号，并对信号进行处理使之无差错并合理的传输</p>
+<h3 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a>网络层</h3><p>主要负责路由，选择合适的路径，进行阻塞控制等功能</p>
+<h3 id="传输层"><a href="#传输层" class="headerlink" title="传输层"></a>传输层</h3><p>最关键的一层，向拥护提供可靠的端到端服务</p>
+<h3 id="会话层"><a href="#会话层" class="headerlink" title="会话层"></a>会话层</h3><p>主要负责两个会话进程之间的通信</p>
+<h3 id="表示层"><a href="#表示层" class="headerlink" title="表示层"></a>表示层</h3><p>处理通信信号的表示方法，进行不同的格式之间的翻译，并负责数据的加密解密，数据的压缩与恢复</p>
+<h3 id="应用层-1"><a href="#应用层-1" class="headerlink" title="应用层"></a>应用层</h3><p>保持应用程序之间建立连接所需要的数据记录，为用户服务</p>
+<h2 id="协议"><a href="#协议" class="headerlink" title="协议"></a>协议</h2><h3 id="要素"><a href="#要素" class="headerlink" title="要素"></a>要素</h3><p>协议由语法、语义、时序（同步）三部分组成</p>
+<p>语法规定了通信双方彼此“如何讲”，即规定了传输数据的格式</p>
+<p>语义规定了通信双方彼此“讲什么”，规定了所要完成的功能，如要发出什么控制消息、执行的动作和返回的应答</p>
+<p>时序规定了信息交流的次序</p>
+<h3 id="应用层-2"><a href="#应用层-2" class="headerlink" title="应用层"></a>应用层</h3><h4 id="DHCP（动态主机分配协议）（使用UDP协议工作）"><a href="#DHCP（动态主机分配协议）（使用UDP协议工作）" class="headerlink" title="DHCP（动态主机分配协议）（使用UDP协议工作）"></a>DHCP（动态主机分配协议）（使用UDP协议工作）</h4><p>给内部网络或网络服务供应商自动分配IP地址，给用户或者内部网络管理员作为对所有计算机作中央管理的手段</p>
+<h4 id="DNS（静态的配置协议，端口号53）（UDP）（域名查询）"><a href="#DNS（静态的配置协议，端口号53）（UDP）（域名查询）" class="headerlink" title="DNS（静态的配置协议，端口号53）（UDP）（域名查询）"></a>DNS（静态的配置协议，端口号53）（UDP）（域名查询）</h4><p>域名解析</p>
+<h4 id="FTP（文件传输协议，端口号21）"><a href="#FTP（文件传输协议，端口号21）" class="headerlink" title="FTP（文件传输协议，端口号21）"></a>FTP（文件传输协议，端口号21）</h4><p>默认情况下FTP协议使用TCP20端口进行数据连接，TCP21端口进行控制连接</p>
+<p>是否使用TCP20端口建立数据连接与传输模式有关，主动方式使用TCP20端口，被动方式由服务器和客户端自行协商</p>
+<h4 id="HTTP（超文本传输协议，端口号80）"><a href="#HTTP（超文本传输协议，端口号80）" class="headerlink" title="HTTP（超文本传输协议，端口号80）"></a>HTTP（超文本传输协议，端口号80）</h4><p>面向事务的应用层协议</p>
+<h4 id="POP3（邮局协议）"><a href="#POP3（邮局协议）" class="headerlink" title="POP3（邮局协议）"></a>POP3（邮局协议）</h4><p>用户接受邮件</p>
+<h4 id="SMTP（简单邮件传输协议）"><a href="#SMTP（简单邮件传输协议）" class="headerlink" title="SMTP（简单邮件传输协议）"></a>SMTP（简单邮件传输协议）</h4><p>用于发送邮件</p>
+<h4 id="RIP（UDP）"><a href="#RIP（UDP）" class="headerlink" title="RIP（UDP）"></a>RIP（UDP）</h4><p>分布式的基于距离向量的路由选择协议，通过广播UDP报文来交换路由信息</p>
+<h4 id="BGP（TCP）"><a href="#BGP（TCP）" class="headerlink" title="BGP（TCP）"></a>BGP（TCP）</h4><p>外部网关协议</p>
+<h3 id="传输层-1"><a href="#传输层-1" class="headerlink" title="传输层"></a>传输层</h3><h3 id="OSPF（IP）"><a href="#OSPF（IP）" class="headerlink" title="OSPF（IP）"></a>OSPF（IP）</h3><p>内部网关协议（不使用传输协议，直接用IP包封装它的数据）</p>
+<h4 id="TCP（传输控制协议）"><a href="#TCP（传输控制协议）" class="headerlink" title="TCP（传输控制协议）"></a>TCP（传输控制协议）</h4><p>提供可靠的面向连接的服务，传输数据前必须建立链接，结束后释放连接，可靠的全双工信道</p>
+<p>可靠、有序、无丢失、不重复</p>
+<h4 id="UDP（用户数据报协议）"><a href="#UDP（用户数据报协议）" class="headerlink" title="UDP（用户数据报协议）"></a>UDP（用户数据报协议）</h4><p>发送数据前无需建立连接，不使用拥塞控制，不保证可靠交付，尽最大努力交付</p>
+<h3 id="网络层-1"><a href="#网络层-1" class="headerlink" title="网络层"></a>网络层</h3><h4 id="IP"><a href="#IP" class="headerlink" title="IP"></a>IP</h4><p>网络之间互联的协议</p>
+<h4 id="ARP（地址解析协议）（查询MAC地址）"><a href="#ARP（地址解析协议）（查询MAC地址）" class="headerlink" title="ARP（地址解析协议）（查询MAC地址）"></a>ARP（地址解析协议）（查询MAC地址）</h4><p>实现通过IP地址得知其物理地址</p>
+<h4 id="ICMP（Internet控制报文协i议）"><a href="#ICMP（Internet控制报文协i议）" class="headerlink" title="ICMP（Internet控制报文协i议）"></a>ICMP（Internet控制报文协i议）</h4><p>tcp/ip协议族的一个子协议，用于在IP主机、路由器之间传递控制消息</p>
+<h4 id="ICMPv6"><a href="#ICMPv6" class="headerlink" title="ICMPv6"></a>ICMPv6</h4><h5 id="IGMP（Internet组管理协议）"><a href="#IGMP（Internet组管理协议）" class="headerlink" title="IGMP（Internet组管理协议）"></a>IGMP（Internet组管理协议）</h5><p>因特网协议家族中的一个组播协议</p>
+<p>用于IP主机向任一个直接相邻的路由器报告他们的组成员情况</p>
+<h5 id="RIP（路由信息协议）"><a href="#RIP（路由信息协议）" class="headerlink" title="RIP（路由信息协议）"></a>RIP（路由信息协议）</h5><p>一种在网关与主机之间交换路由选择信息的标准</p>
+<h5 id="OSPF（开放式最短路径优先，分布式链路状态协议）"><a href="#OSPF（开放式最短路径优先，分布式链路状态协议）" class="headerlink" title="OSPF（开放式最短路径优先，分布式链路状态协议）"></a>OSPF（开放式最短路径优先，分布式链路状态协议）</h5><h5 id="BGP（边界网关协议）"><a href="#BGP（边界网关协议）" class="headerlink" title="BGP（边界网关协议）"></a>BGP（边界网关协议）</h5><p>用来链接Internet上独立系统的路由选择协议，采用路径向量路由选择协议</p>
+<h3 id="数据链路层-1"><a href="#数据链路层-1" class="headerlink" title="数据链路层"></a>数据链路层</h3><h4 id="ARQ（自动重传请求协议）"><a href="#ARQ（自动重传请求协议）" class="headerlink" title="ARQ（自动重传请求协议）"></a>ARQ（自动重传请求协议）</h4><p>错误纠正协议之一，包括停止等待ARQ协议和连续ARQ协议等</p>
+<h4 id="停止等待协议"><a href="#停止等待协议" class="headerlink" title="停止等待协议"></a>停止等待协议</h4><h5 id="CSMA-CD（载波监听多点接入-碰撞检测协议）"><a href="#CSMA-CD（载波监听多点接入-碰撞检测协议）" class="headerlink" title="CSMA/CD（载波监听多点接入/碰撞检测协议）"></a>CSMA/CD（载波监听多点接入/碰撞检测协议）</h5><p>载波监听和碰撞检测</p>
+<h5 id="PPP（点对点协议）（接入网络）"><a href="#PPP（点对点协议）（接入网络）" class="headerlink" title="PPP（点对点协议）（接入网络）"></a>PPP（点对点协议）（接入网络）</h5><p>面向字节，由三部分组成：一个将IP数据包封装到串行链路的方法；一个用于建立、配置和测试数据链路链接的链路控制协议</p>
+<h5 id="HDLC（高级数据链路控制同步网上传输、面向比特的数据链路层协议）"><a href="#HDLC（高级数据链路控制同步网上传输、面向比特的数据链路层协议）" class="headerlink" title="HDLC（高级数据链路控制同步网上传输、面向比特的数据链路层协议）"></a>HDLC（高级数据链路控制同步网上传输、面向比特的数据链路层协议）</h5><h2 id="TCP（首部最短20B）"><a href="#TCP（首部最短20B）" class="headerlink" title="TCP（首部最短20B）"></a>TCP（首部最短20B）</h2><p>1.若通信往返时间为RTT，则客户主动请求断开链接，到达关闭状态<strong>至少</strong>需要：</p>
+<p>客户端：<strong>RTT+2*MSL（最长报文段寿命）</strong>（即通信往返时间+数据传输时间）</p>
+<p>服务器端：<strong>1.5RTT</strong>（本来需要四次握手，若最少则客户端无数据发送，简化到三次握手，即1.5次报文段传输时间）</p>
+<p>2.主机通过HTTP/1.1请求访问某Web服务器上的Web页，引用同目录下的1幅图像，该文件大小为1MSS（最大段长），图像文件大小为3MSS，RTT=10ms，则从请求建立TCP时刻起，到接收到全部内容止，所需的时间至少是：</p>
+<p>第一个RTT，请求建立TCP链接，此时服务器发送窗口为1MSS</p>
+<p>第二个RTT，发送大小为1MSS的文件，此时发送窗口变为2MSS</p>
+<p>第三个RTT，发送大小为2MSS的图片，此时发送窗口变为4MSS</p>
+<p>第四个RTT，发送剩下的1MSS图片，完成传输</p>
+<p>所以需要4RTT</p>
+<h2 id="UDP（首部固定8B）（不保证可靠传输）"><a href="#UDP（首部固定8B）（不保证可靠传输）" class="headerlink" title="UDP（首部固定8B）（不保证可靠传输）"></a>UDP（首部固定8B）（不保证可靠传输）</h2><p>使用UDP协议时，<strong>可靠传输必须由应用层实现</strong></p>
+<p>UDP协议实现分用时所依据的头部字段是：<strong>目的端口号</strong></p>
+<p>复用：<strong>源端口号</strong></p>
+<p>分用$\Rightarrow$收(收到哪)$\Rightarrow$目的端口号</p>
+<p>复用$\Rightarrow$发(从哪发)$\Rightarrow$源端口号</p>
+<h2 id="MAC"><a href="#MAC" class="headerlink" title="MAC"></a>MAC</h2><h3 id="CSMA-CD（适用于有线网络）"><a href="#CSMA-CD（适用于有线网络）" class="headerlink" title="CSMA/CD（适用于有线网络）"></a>CSMA/CD（适用于有线网络）</h3><p><strong>二进制指数退避法</strong>是CSMA/CD中的一种冲突处理方法（<strong>冲突后的处理</strong>）（<strong>冲突检测</strong>）</p>
+<h3 id="CSMA-CA（适用于无线网络）"><a href="#CSMA-CA（适用于无线网络）" class="headerlink" title="CSMA/CA（适用于无线网络）"></a>CSMA/CA（适用于无线网络）</h3><p>CSMA/CA进行<strong>信道预约</strong>时，主要使用的是<strong>请求发送帧RTS和允许发送帧CTS</strong></p>
+<p>（一台主机想要发送消息时，先向无线站点发送一个RTS帧，说明要传输的数据及相应的时间。无线站点收到RTS帧后，会广播一个CTS帧作为对此的响应，既给发送端发许可，又指示其他主机不要在这个时间内发送数据，从而预约信道，避免碰撞。发送确认帧的目的主要是保证信息的可靠传输）（<strong>避免冲突</strong>）</p>
+<h2 id="路由器、交换机、集线器"><a href="#路由器、交换机、集线器" class="headerlink" title="路由器、交换机、集线器"></a>路由器、交换机、集线器</h2><p>集线器是一个多端口的中继器，工作在物理层</p>
+<p>以太网交换机是一个多端口的网桥，工作在数据链路层</p>
+<p>路由器是网络层设备，它实现了网络模型的下三层</p>
+<h2 id="以太网"><a href="#以太网" class="headerlink" title="以太网"></a>以太网</h2><p>1.以太网最小帧长 = 总线传播时延 * 数据传输率 * 2</p>
+<p>总线传播时延=$\frac{传播最远距离}{数据传输速率}$ + 传播时间延迟(如果有)</p>
+<p>2.DHCP动态获取IP地址过程中，发送的是<strong>广播帧</strong></p>
+<h2 id="信道"><a href="#信道" class="headerlink" title="信道"></a>信道</h2><p>信道的极限数据传输率=$Wlog_2(1+\frac{S}N)或2Wlog_2V$</p>
+<p>其中，W可为频率带宽</p>
+<h3 id="影响信道数据传输率速率的因素："><a href="#影响信道数据传输率速率的因素：" class="headerlink" title="影响信道数据传输率速率的因素："></a>影响信道数据传输率速率的因素：</h3><p>①信噪比：$\frac SN$</p>
+<p>②频率带宽：W</p>
+<p>③调制速率：新到的传输速率实际上就是信号的发送速率，而调制速度也会直接限制数据的传输速率</p>
+<p>（信号传播速度:x:，信号的传播速度是信号在信道上的传播速度，与信道的发送速率无关）</p>
+<h2 id="划分子网"><a href="#划分子网" class="headerlink" title="划分子网"></a>划分子网</h2><h3 id="例题-8"><a href="#例题-8" class="headerlink" title="例题"></a>例题</h3><p>2019-37</p>
+<p>将101.200.16.0/20划分为5个子网，求其中可能的最小子网的可分配IP地址数</p>
+<p>101.200.16.0/20$\rightarrow$[101.200.0001] 0000.0000 0000</p>
+<p>则可划分为：</p>
+<p>[101.200.0001 0]000.0000 0000</p>
+<p>[101.200.0001 10]00.0000 0000</p>
+<p>[101.200.0001 110]0.0000 0000</p>
+<p>[101.200.0001 1110].0000 0000</p>
+<p>[101.200.0001 1111].0000 0000</p>
+<p>则最后一组IP地址数为$2^8-2$=254</p>
+<h2 id="例题-9"><a href="#例题-9" class="headerlink" title="例题"></a>例题</h2><p>1.2021-47</p>
+<p>①从t0到t1期间，除了HTTP，H1还运行了DNS应用层协议，以将域名转换为IP地址。</p>
+<p>DNS运行在UDP之上，UDP将应用层叫下来的DNS报文添加首部后，向下交付给IP层，IP层使用IP数据报进行封装，封装好后，向下交付给数据链路层，数据链路层使用CSMA/CD帧进行封装。</p>
+<p>因此，逐层封装关系如下：DNS报文$\rightarrow$UDP报文$\rightarrow$IP数据报$\rightarrow$CSMA/CD帧</p>
+<p>②（分析传输过程）</p>
+<p>③H2至少会接受到2个和此次Web访问相关的帧。接受到的均是封装ARP查询报文的以太网帧；</p>
+<p>这些帧的目的MAC地址均是FF-FF-FF-FF-FF-FF</p>
+<p>2.2020-47</p>
+<p>①配置NAT表，外网IP地址应该为路由器的外端IP地址，内网IP地址应该为Web服务器的地址</p>
+<p>Web服务器默认端口为80，因此内网端口号固定为80，当其他网络的主机访问Web服务器时，默认访问的端口应该也是80，但是访问的目的IP是路由器的IP地址，因此Nat表中的外部端口最好也统一为80</p>
+<p>②注意NAT内网外网</p>
+<p>3.2019-47（2）</p>
+<p>设备1为路由器，其接口应配置IP地址。IF1接口与路由器R相连，其相连接口的IP地址为192.168.1.253/30，即[192.168.1.111111]01</p>
+<p>则IF1接口的网络前缀也为192.168.1.111111，除去已分配的253，除去全0全1，则IF1接口的IP地址为192.168.1.11111110，即192.168.1.254</p>
+<p>通常默认网关地址就是路由器中的LAN端口地址，设备1的IF2、IF3接口的IP地址分别设置为192.168.1.1和192.168.1.65</p>
+<p>（路由器配置IP地址；交换机不配置，交换机根据MAC地址转发；集线器也不配置，集线器向全部端口转发）</p>
+<p>4.2018-47</p>
+<p>（1）划分子网注意看子网连接的路由器</p>
+<p>求子网还可连接多少主机要注意计算已分配的主机数（b-a+1），<strong>还有已分配给路由器的IP地址</strong></p>
+<p>（2）分片偏移量为：数据开头/8</p>
+<p>如：776一片，则第一片偏移量为0，第二片偏移量为776/8=97</p>
+<p>5.2017-47</p>
+<p>（2）发送序号和确认序号字段为3比特，即发送序号和确认序号为0~7，发送窗口为$2^3-1=7$</p>
+<p>所以还可以传送$S_{5,2}、S_{6,2}、S_{7,2}、S_{0,2}、S_{1,2}$</p>
+<p>（4）<br>$$<br>最大信道利用率U=\frac{发送数据的时间}{从开始发送第一帧到收到第一个确认帧的时间}=\frac{NT_d}{T_d+R_{TT}+T_a}\<br>（其中，N是发送窗口的最大值，T_d是发送一数据帧的时间，R_{TT}是往返时间，T_a是发送一确认帧的时间）\<br>发送窗口为7，发送所需时间：7<em>\frac{1000B}{100Mbps}\<br>R_{TT}时间为：0.96ms\<br>开始发送第一帧到收到第一个确认帧时间：\frac{1000B}{100Mbps}+0.96ms+\frac{1000B}{100Mbps}\<br>所以U=\frac{7</em>\frac{1000<em>8}{100</em>10^6}}{0.96<em>10^{-3}+2</em>\frac{1000<em>8}{100</em>10^6}}*100%=50%<br>$$</p>
+<p>6.2015-47</p>
+<p>（1）主机无IP地址，所以发送IP分组的源IP地址为网络号，即全0；目的IP地址为广播地址，即全1</p>
+<p>（3）</p>
+<p>①子网掩码为255.255.255.0即前24位为1，其中主机1的IP地址为111.123.15.4，WWW服务器的IP地址为111.123.15.3</p>
+<p>两者的前24位相同，所以主机1可以访问WWW服务器</p>
+<p>②若主机1要访问Internet，则要先访问路由器，而主机1分配的默认网关为111.123.15.2（和DHCP的IP地址相同）</p>
+<p>则路由器并不能接受到主机1发送来的数据，主机1发送的IP分组会被路由到错误的默认网关111.123.15.2</p>
+<p>7.2014-43</p>
+<p>（1）要<strong>使路由表的路由项尽可能少（路由聚合）</strong>，则可以把子网193.1.6.0/24和192.1.7.0/24聚合为子网192.1.6.0/23</p>
+<p>（3）在R1增加一条特殊的直连网络链路链接Internet，则网络前缀应为：0.0.0.0/0</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2023" class="archive-year">2023</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2023/01/07/408/" class="archive-article-date">
-  	<time datetime="2023-01-07T08:59:07.855Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-01-07</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2023/01/07/408/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2023/01/07/%E6%94%BF%E6%B2%BB/" class="archive-article-date">
-  	<time datetime="2023-01-07T08:59:07.839Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-01-07</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2023/01/07/%E6%95%B0%E5%AD%A6/" class="archive-article-date">
-  	<time datetime="2023-01-07T08:59:07.831Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-01-07</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+<nav id="article-nav">
+  
+  
+    <a href="/2023/01/07/%E6%94%BF%E6%B2%BB/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+        
+    </div>
+</aside>
+
+
+
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -251,8 +793,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
